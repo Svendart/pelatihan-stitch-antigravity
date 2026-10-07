@@ -1,0 +1,2782 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Portofolio Digital CV Ahsan - Siswa SMK Negeri 2 Surakarta (Pengembangan Perangkat Lunak dan Gim). Menampilkan perjalanan belajar programming, proyek, dan karya kreatif.">
+  <meta name="keywords"
+    content="Ahsan, SMK PPLG, Portofolio Siswa, Web Developer, Junior Developer, Python, Android Studio, HTML CSS, Creative Learner">
+  <meta name="author" content="Ahsan">
+  <title>Ahsan | Student Developer & Creative Learner</title>
+
+  <!-- Google Fonts: Plus Jakarta Sans, Inter, JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap"
+    rel="stylesheet">
+
+  <style>
+    /* ==========================================================================
+       OBSIDIAN TERMINAL DESIGN SYSTEM - TOKENS & RESET
+       ========================================================================== */
+    :root {
+      /* Colors */
+      --bg-base: #0b0f19;
+      --bg-card: rgba(17, 24, 39, 0.75);
+      --bg-card-hover: rgba(31, 41, 55, 0.85);
+      --bg-modal: rgba(15, 23, 42, 0.96);
+      --bg-terminal: #080c14;
+      --bg-surface-elevated: #1f2937;
+
+      /* Accents */
+      --primary: #06b6d4;
+      /* Neon Cyan */
+      --primary-dim: #0891b2;
+      --primary-glow: rgba(6, 182, 212, 0.25);
+      --secondary: #10b981;
+      /* Vibrant Emerald */
+      --secondary-glow: rgba(16, 185, 129, 0.2);
+      --tertiary: #38bdf8;
+      /* Sky Cyan */
+      --amber: #fbbf24;
+      --slate-muted: #94a3b8;
+
+      /* Borders */
+      --border-subtle: rgba(255, 255, 255, 0.08);
+      --border-hover: rgba(6, 182, 212, 0.35);
+      --border-emerald: rgba(16, 185, 129, 0.3);
+
+      /* Typography & Text */
+      --font-headline: 'Plus Jakarta Sans', system-ui, sans-serif;
+      --font-body: 'Inter', system-ui, sans-serif;
+      --font-mono: 'JetBrains Mono', monospace;
+
+      --text-main: #f9fafb;
+      --text-muted: #9ca3af;
+      --text-dim: #6b7280;
+
+      /* Radii */
+      --radius-sm: 6px;
+      --radius-md: 10px;
+      --radius-lg: 14px;
+      --radius-xl: 18px;
+      --radius-2xl: 24px;
+      --radius-full: 9999px;
+
+      /* Transitions */
+      --transition-fast: 0.18s cubic-bezier(0.4, 0, 0.2, 1);
+      --transition-base: 0.28s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    *,
+    *::before,
+    *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      font-size: 16px;
+      color-scheme: dark;
+    }
+
+    body {
+      background-color: var(--bg-base);
+      color: var(--text-main);
+      font-family: var(--font-body);
+      line-height: 1.6;
+      overflow-x: hidden;
+      min-height: 100vh;
+      position: relative;
+    }
+
+    /* Ambient Atmosphere Glows */
+    body::before {
+      content: '';
+      position: fixed;
+      top: -150px;
+      left: 10%;
+      width: 550px;
+      height: 550px;
+      background: radial-gradient(circle, rgba(6, 182, 212, 0.09) 0%, rgba(11, 15, 25, 0) 70%);
+      pointer-events: none;
+      z-index: 0;
+      filter: blur(40px);
+    }
+
+    body::after {
+      content: '';
+      position: fixed;
+      top: 45%;
+      right: -100px;
+      width: 600px;
+      height: 600px;
+      background: radial-gradient(circle, rgba(16, 185, 129, 0.06) 0%, rgba(11, 15, 25, 0) 70%);
+      pointer-events: none;
+      z-index: 0;
+      filter: blur(50px);
+    }
+
+    /* Typography Defaults */
+    h1,
+    h2,
+    h3,
+    h4,
+    h5 {
+      font-family: var(--font-headline);
+      color: var(--text-main);
+      line-height: 1.25;
+      letter-spacing: -0.02em;
+    }
+
+    p {
+      color: var(--text-muted);
+      font-size: 0.975rem;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    /* Container */
+    .container {
+      width: 100%;
+      max-width: 1200px;
+      margin-left: auto;
+      margin-right: auto;
+      padding-left: 1.5rem;
+      padding-right: 1.5rem;
+      position: relative;
+      z-index: 1;
+    }
+
+    /* Section Shared Styling */
+    section {
+      padding: 5.5rem 0;
+      position: relative;
+      z-index: 1;
+    }
+
+    .section-header {
+      margin-bottom: 3rem;
+      text-align: left;
+    }
+
+    .section-tag {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      font-family: var(--font-mono);
+      font-size: 0.8rem;
+      font-weight: 600;
+      color: var(--primary);
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      margin-bottom: 0.75rem;
+    }
+
+    .section-tag::before {
+      content: '//';
+      color: var(--primary-dim);
+    }
+
+    .section-title {
+      font-size: clamp(1.85rem, 3.5vw, 2.4rem);
+      font-weight: 700;
+      margin-bottom: 0.75rem;
+    }
+
+    .section-desc {
+      font-size: 1.05rem;
+      max-width: 680px;
+      color: var(--text-muted);
+    }
+
+    /* ==========================================================================
+       NAVIGATION BAR
+       ========================================================================== */
+    .navbar {
+      position: sticky;
+      top: 0;
+      width: 100%;
+      z-index: 100;
+      background: rgba(11, 15, 25, 0.85);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border-bottom: 1px solid var(--border-subtle);
+      transition: all var(--transition-base);
+    }
+
+    .nav-container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 4.25rem;
+    }
+
+    .nav-brand {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      font-family: var(--font-mono);
+      font-size: 1.05rem;
+      font-weight: 700;
+      color: var(--text-main);
+    }
+
+    .brand-prompt {
+      color: var(--primary);
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 1.5rem;
+      list-style: none;
+    }
+
+    .nav-link {
+      font-family: var(--font-headline);
+      font-size: 0.9rem;
+      font-weight: 500;
+      color: var(--text-muted);
+      transition: color var(--transition-fast);
+      position: relative;
+      padding: 0.4rem 0;
+    }
+
+    .nav-link:hover,
+    .nav-link.active {
+      color: var(--primary);
+    }
+
+    .nav-link.active::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 2px;
+      background-color: var(--primary);
+      border-radius: var(--radius-full);
+      box-shadow: 0 0 8px var(--primary);
+    }
+
+    .nav-actions {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+    }
+
+    .status-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.45rem;
+      padding: 0.35rem 0.75rem;
+      background: rgba(16, 185, 129, 0.1);
+      border: 1px solid var(--border-emerald);
+      border-radius: var(--radius-full);
+      font-family: var(--font-mono);
+      font-size: 0.75rem;
+      color: #34d399;
+      font-weight: 600;
+      letter-spacing: 0.02em;
+    }
+
+    .pulsing-dot {
+      width: 7px;
+      height: 7px;
+      background-color: var(--secondary);
+      border-radius: 50%;
+      box-shadow: 0 0 8px var(--secondary);
+      animation: pulse-glow 2s infinite ease-in-out;
+    }
+
+    @keyframes pulse-glow {
+
+      0%,
+      100% {
+        opacity: 1;
+        transform: scale(1);
+      }
+
+      50% {
+        opacity: 0.4;
+        transform: scale(0.85);
+      }
+    }
+
+    .mobile-menu-btn {
+      display: none;
+      background: transparent;
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-md);
+      color: var(--text-main);
+      padding: 0.5rem;
+      cursor: pointer;
+    }
+
+    /* ==========================================================================
+       HERO / HOME SECTION
+       ========================================================================== */
+    .hero-section {
+      padding: 6.5rem 0 5rem 0;
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1.15fr 0.85fr;
+      gap: 3rem;
+      align-items: center;
+    }
+
+    .hero-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.4rem 0.9rem;
+      background: rgba(6, 182, 212, 0.1);
+      border: 1px solid rgba(6, 182, 212, 0.3);
+      border-radius: var(--radius-full);
+      font-family: var(--font-mono);
+      font-size: 0.8rem;
+      color: #22d3ee;
+      font-weight: 600;
+      margin-bottom: 1.25rem;
+    }
+
+    .hero-title {
+      font-size: clamp(2.8rem, 5.5vw, 4.2rem);
+      font-weight: 800;
+      line-height: 1.05;
+      letter-spacing: -0.03em;
+      margin-bottom: 0.5rem;
+    }
+
+    .hero-title .gradient-text {
+      background: linear-gradient(135deg, #ffffff 30%, var(--primary) 90%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .hero-subtitle {
+      font-size: clamp(1.2rem, 2.5vw, 1.6rem);
+      font-weight: 600;
+      color: var(--tertiary);
+      font-family: var(--font-headline);
+      margin-bottom: 1.25rem;
+    }
+
+    .hero-description {
+      font-size: 1.1rem;
+      line-height: 1.7;
+      color: var(--text-muted);
+      max-width: 580px;
+      margin-bottom: 2rem;
+    }
+
+    .hero-ctas {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      margin-bottom: 2.25rem;
+    }
+
+    /* Buttons */
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.6rem;
+      font-family: var(--font-headline);
+      font-size: 0.95rem;
+      font-weight: 600;
+      padding: 0.8rem 1.6rem;
+      border-radius: var(--radius-lg);
+      cursor: pointer;
+      transition: all var(--transition-base);
+      border: 1px solid transparent;
+      text-decoration: none;
+    }
+
+    .btn-primary {
+      background-color: var(--primary);
+      color: #0b0f19;
+      box-shadow: 0 0 20px var(--primary-glow);
+    }
+
+    .btn-primary:hover {
+      background-color: #22d3ee;
+      transform: translateY(-2px);
+      box-shadow: 0 4px 25px rgba(6, 182, 212, 0.45);
+    }
+
+    .btn-secondary {
+      background: rgba(17, 24, 39, 0.8);
+      color: var(--text-main);
+      border-color: var(--border-subtle);
+      backdrop-filter: blur(8px);
+    }
+
+    .btn-secondary:hover {
+      border-color: var(--primary);
+      color: var(--primary);
+      transform: translateY(-2px);
+      background: rgba(31, 41, 55, 0.85);
+    }
+
+    .hero-highlights {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+
+    .highlights-label {
+      font-family: var(--font-mono);
+      font-size: 0.75rem;
+      color: var(--text-dim);
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+
+    .pill-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+    }
+
+    .pill {
+      font-family: var(--font-mono);
+      font-size: 0.8rem;
+      padding: 0.25rem 0.65rem;
+      border-radius: var(--radius-full);
+      background: rgba(255, 255, 255, 0.04);
+      border: 1px solid var(--border-subtle);
+      color: var(--text-muted);
+      transition: all var(--transition-fast);
+    }
+
+    .pill:hover {
+      border-color: var(--primary);
+      color: var(--primary);
+      background: rgba(6, 182, 212, 0.05);
+    }
+
+    /* Hero Terminal Visual */
+    .hero-terminal-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-2xl);
+      backdrop-filter: blur(14px);
+      -webkit-backdrop-filter: blur(14px);
+      box-shadow: 0 20px 40px -15px rgba(0, 0, 0, 0.6);
+      overflow: hidden;
+      transition: all var(--transition-base);
+      position: relative;
+    }
+
+    .hero-terminal-card:hover {
+      border-color: var(--border-hover);
+      box-shadow: 0 25px 50px -15px rgba(6, 182, 212, 0.15);
+      transform: translateY(-3px);
+    }
+
+    .terminal-header {
+      background: rgba(11, 15, 25, 0.9);
+      padding: 0.85rem 1.25rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-bottom: 1px solid var(--border-subtle);
+    }
+
+    .mac-dots {
+      display: flex;
+      gap: 0.4rem;
+    }
+
+    .dot {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+    }
+
+    .dot-red {
+      background: #ef4444;
+    }
+
+    .dot-yellow {
+      background: #f59e0b;
+    }
+
+    .dot-green {
+      background: #10b981;
+    }
+
+    .terminal-title {
+      font-family: var(--font-mono);
+      font-size: 0.75rem;
+      color: var(--text-dim);
+    }
+
+    .terminal-body {
+      padding: 1.5rem;
+      background: var(--bg-terminal);
+      font-family: var(--font-mono);
+      font-size: 0.85rem;
+      line-height: 1.7;
+    }
+
+    .terminal-line {
+      display: flex;
+      align-items: flex-start;
+      gap: 0.65rem;
+      margin-bottom: 0.65rem;
+    }
+
+    .prompt-char {
+      color: var(--primary);
+      user-select: none;
+    }
+
+    .code-comment {
+      color: var(--text-dim);
+    }
+
+    .code-key {
+      color: var(--tertiary);
+    }
+
+    .code-val {
+      color: var(--secondary);
+    }
+
+    .code-str {
+      color: #fed7aa;
+    }
+
+    .terminal-footer-badge {
+      margin-top: 1.25rem;
+      padding-top: 1rem;
+      border-top: 1px dashed var(--border-subtle);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    /* ==========================================================================
+       ABOUT ME SECTION
+       ========================================================================== */
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1.2fr 0.8fr;
+      gap: 2.5rem;
+      align-items: stretch;
+    }
+
+    .about-narrative-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-2xl);
+      padding: 2.5rem;
+      backdrop-filter: blur(12px);
+    }
+
+    .narrative-p {
+      font-size: 1.05rem;
+      line-height: 1.8;
+      color: var(--text-muted);
+      margin-bottom: 1.5rem;
+    }
+
+    .narrative-p strong {
+      color: var(--text-main);
+    }
+
+    .quote-box {
+      background: rgba(6, 182, 212, 0.05);
+      border-left: 3px solid var(--primary);
+      padding: 1rem 1.25rem;
+      border-radius: 0 var(--radius-md) var(--radius-md) 0;
+      margin: 1.5rem 0;
+    }
+
+    .quote-box p {
+      font-size: 0.95rem;
+      color: #e2e8f0;
+      font-style: italic;
+    }
+
+    .student-highlights-stack {
+      display: flex;
+      flex-direction: column;
+      gap: 1.25rem;
+    }
+
+    .highlight-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-xl);
+      padding: 1.75rem;
+      backdrop-filter: blur(12px);
+      transition: all var(--transition-base);
+    }
+
+    .highlight-card:hover {
+      border-color: var(--border-hover);
+      transform: translateY(-2px);
+    }
+
+    .highlight-card-header {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      margin-bottom: 0.75rem;
+    }
+
+    .highlight-icon {
+      width: 36px;
+      height: 36px;
+      border-radius: var(--radius-md);
+      background: rgba(6, 182, 212, 0.1);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--primary);
+      font-size: 1.1rem;
+    }
+
+    .highlight-title {
+      font-size: 1.1rem;
+      font-weight: 700;
+    }
+
+    /* ==========================================================================
+       CURRENT FOCUS SECTION (6 CARDS)
+       ========================================================================== */
+    .focus-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .focus-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-xl);
+      padding: 1.75rem;
+      backdrop-filter: blur(12px);
+      transition: all var(--transition-base);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .focus-card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 2px;
+      background: linear-gradient(90deg, transparent, var(--primary), transparent);
+      opacity: 0;
+      transition: opacity var(--transition-base);
+    }
+
+    .focus-card:hover {
+      border-color: var(--border-hover);
+      background: var(--bg-card-hover);
+      transform: translateY(-3px);
+      box-shadow: 0 12px 30px -5px rgba(6, 182, 212, 0.12);
+    }
+
+    .focus-card:hover::before {
+      opacity: 1;
+    }
+
+    .focus-card-top {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 1rem;
+    }
+
+    .focus-number {
+      font-family: var(--font-mono);
+      font-size: 0.85rem;
+      font-weight: 700;
+      color: var(--primary);
+    }
+
+    .focus-badge {
+      font-family: var(--font-mono);
+      font-size: 0.72rem;
+      padding: 0.2rem 0.6rem;
+      border-radius: var(--radius-full);
+      background: rgba(16, 185, 129, 0.1);
+      border: 1px solid var(--border-emerald);
+      color: #34d399;
+      font-weight: 600;
+    }
+
+    .focus-title {
+      font-size: 1.15rem;
+      font-weight: 700;
+      margin-bottom: 0.65rem;
+      color: var(--text-main);
+    }
+
+    .focus-detail {
+      font-size: 0.9rem;
+      color: var(--text-muted);
+      line-height: 1.6;
+    }
+
+    /* ==========================================================================
+       SKILLS SECTION (CATEGORIZED + FILTER TABS)
+       ========================================================================== */
+    .skills-filter-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.6rem;
+      margin-bottom: 2rem;
+    }
+
+    .filter-btn {
+      font-family: var(--font-mono);
+      font-size: 0.825rem;
+      padding: 0.45rem 1rem;
+      border-radius: var(--radius-full);
+      background: rgba(255, 255, 255, 0.03);
+      border: 1px solid var(--border-subtle);
+      color: var(--text-muted);
+      cursor: pointer;
+      transition: all var(--transition-fast);
+    }
+
+    .filter-btn:hover {
+      border-color: var(--primary);
+      color: var(--primary);
+    }
+
+    .filter-btn.active {
+      background: rgba(6, 182, 212, 0.15);
+      border-color: var(--primary);
+      color: #22d3ee;
+      box-shadow: 0 0 12px var(--primary-glow);
+    }
+
+    .skills-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+      gap: 1.25rem;
+    }
+
+    .skill-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-lg);
+      padding: 1.4rem;
+      backdrop-filter: blur(12px);
+      transition: all var(--transition-base);
+    }
+
+    .skill-card:hover {
+      border-color: var(--border-hover);
+      background: var(--bg-card-hover);
+      transform: translateY(-2px);
+    }
+
+    .skill-card-top {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 0.75rem;
+    }
+
+    .skill-name {
+      font-family: var(--font-headline);
+      font-size: 1.05rem;
+      font-weight: 700;
+      color: var(--text-main);
+    }
+
+    /* Student Proficiency Badges */
+    .level-badge {
+      font-family: var(--font-mono);
+      font-size: 0.7rem;
+      padding: 0.2rem 0.55rem;
+      border-radius: var(--radius-full);
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.03em;
+    }
+
+    .level-learning {
+      background: rgba(6, 182, 212, 0.12);
+      border: 1px solid rgba(6, 182, 212, 0.35);
+      color: #22d3ee;
+    }
+
+    .level-developing {
+      background: rgba(16, 185, 129, 0.12);
+      border: 1px solid rgba(16, 185, 129, 0.35);
+      color: #34d399;
+    }
+
+    .level-familiar {
+      background: rgba(245, 158, 11, 0.12);
+      border: 1px solid rgba(245, 158, 11, 0.35);
+      color: #fbbf24;
+    }
+
+    .level-beginner {
+      background: rgba(148, 163, 184, 0.12);
+      border: 1px solid rgba(148, 163, 184, 0.25);
+      color: #cbd5e1;
+    }
+
+    .skill-category {
+      font-family: var(--font-mono);
+      font-size: 0.75rem;
+      color: var(--text-dim);
+      margin-bottom: 0.5rem;
+    }
+
+    .skill-note {
+      font-size: 0.85rem;
+      color: var(--text-muted);
+      line-height: 1.45;
+    }
+
+    /* Student Disclaimer Callout */
+    .student-note-banner {
+      margin-top: 2.5rem;
+      padding: 1.25rem 1.5rem;
+      border-radius: var(--radius-lg);
+      background: rgba(11, 15, 25, 0.6);
+      border: 1px solid var(--border-subtle);
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      font-family: var(--font-mono);
+      font-size: 0.825rem;
+      color: var(--text-muted);
+    }
+
+    .note-icon {
+      color: var(--amber);
+      font-size: 1.2rem;
+    }
+
+    /* ==========================================================================
+       PROJECTS SECTION (CARD GRID + MODAL DETAILS)
+       ========================================================================== */
+    .projects-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
+      gap: 1.75rem;
+    }
+
+    .project-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-2xl);
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      transition: all var(--transition-base);
+      backdrop-filter: blur(12px);
+    }
+
+    .project-card:hover {
+      border-color: var(--border-hover);
+      transform: translateY(-4px);
+      box-shadow: 0 16px 36px -10px rgba(6, 182, 212, 0.15);
+    }
+
+    .project-header-bar {
+      background: rgba(11, 15, 25, 0.95);
+      padding: 0.8rem 1.25rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-bottom: 1px solid var(--border-subtle);
+    }
+
+    .project-meta-cat {
+      font-family: var(--font-mono);
+      font-size: 0.72rem;
+      color: var(--text-dim);
+    }
+
+    .project-card-content {
+      padding: 1.75rem;
+      display: flex;
+      flex-direction: column;
+      flex-grow: 1;
+    }
+
+    .project-title-row {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 1rem;
+      margin-bottom: 0.75rem;
+    }
+
+    .project-title {
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: var(--text-main);
+    }
+
+    .project-status {
+      font-family: var(--font-mono);
+      font-size: 0.72rem;
+      padding: 0.2rem 0.55rem;
+      border-radius: var(--radius-full);
+      white-space: nowrap;
+    }
+
+    .status-completed {
+      background: rgba(16, 185, 129, 0.12);
+      border: 1px solid var(--border-emerald);
+      color: #34d399;
+    }
+
+    .status-ongoing {
+      background: rgba(6, 182, 212, 0.12);
+      border: 1px solid rgba(6, 182, 212, 0.35);
+      color: #22d3ee;
+    }
+
+    .status-exploration {
+      background: rgba(245, 158, 11, 0.12);
+      border: 1px solid rgba(245, 158, 11, 0.35);
+      color: #fbbf24;
+    }
+
+    .project-desc {
+      font-size: 0.925rem;
+      line-height: 1.6;
+      color: var(--text-muted);
+      margin-bottom: 1.5rem;
+      flex-grow: 1;
+    }
+
+    .project-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.45rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .project-tag {
+      font-family: var(--font-mono);
+      font-size: 0.75rem;
+      padding: 0.2rem 0.6rem;
+      border-radius: var(--radius-md);
+      background: rgba(255, 255, 255, 0.04);
+      border: 1px solid var(--border-subtle);
+      color: var(--tertiary);
+    }
+
+    .project-actions {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      padding-top: 1rem;
+      border-top: 1px solid var(--border-subtle);
+    }
+
+    .btn-detail {
+      font-family: var(--font-headline);
+      font-size: 0.85rem;
+      font-weight: 600;
+      color: var(--primary);
+      background: transparent;
+      border: none;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      transition: gap var(--transition-fast);
+      padding: 0.4rem 0;
+    }
+
+    .btn-detail:hover {
+      gap: 0.65rem;
+      color: #22d3ee;
+    }
+
+    /* ==========================================================================
+       LEARNING JOURNEY SECTION (TIMELINE)
+       ========================================================================== */
+    .timeline-container {
+      position: relative;
+      max-width: 860px;
+      margin: 0 auto;
+      padding-left: 2rem;
+    }
+
+    .timeline-line {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 7px;
+      width: 2px;
+      background: linear-gradient(180deg, var(--primary) 0%, var(--secondary) 60%, rgba(6, 182, 212, 0.1) 100%);
+    }
+
+    .timeline-item {
+      position: relative;
+      margin-bottom: 2.75rem;
+    }
+
+    .timeline-item:last-child {
+      margin-bottom: 0;
+    }
+
+    .timeline-node {
+      position: absolute;
+      left: -2rem;
+      top: 4px;
+      width: 16px;
+      height: 16px;
+      border-radius: 50%;
+      background: var(--bg-base);
+      border: 2px solid var(--primary);
+      box-shadow: 0 0 10px var(--primary);
+    }
+
+    .timeline-item:nth-child(even) .timeline-node {
+      border-color: var(--secondary);
+      box-shadow: 0 0 10px var(--secondary);
+    }
+
+    .timeline-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-xl);
+      padding: 1.5rem 1.75rem;
+      backdrop-filter: blur(12px);
+      transition: all var(--transition-base);
+    }
+
+    .timeline-card:hover {
+      border-color: var(--border-hover);
+      transform: translateX(4px);
+    }
+
+    .timeline-step {
+      font-family: var(--font-mono);
+      font-size: 0.8rem;
+      font-weight: 700;
+      color: var(--primary);
+      margin-bottom: 0.4rem;
+    }
+
+    .timeline-title {
+      font-size: 1.2rem;
+      font-weight: 700;
+      margin-bottom: 0.5rem;
+      color: var(--text-main);
+    }
+
+    .timeline-desc {
+      font-size: 0.95rem;
+      color: var(--text-muted);
+      line-height: 1.6;
+    }
+
+    /* ==========================================================================
+       CREATIVE CORNER SECTION
+       ========================================================================== */
+    .creative-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .creative-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-xl);
+      padding: 2rem 1.75rem;
+      backdrop-filter: blur(12px);
+      transition: all var(--transition-base);
+      position: relative;
+    }
+
+    .creative-card:hover {
+      border-color: rgba(56, 189, 248, 0.4);
+      transform: translateY(-3px);
+      box-shadow: 0 12px 30px -8px rgba(56, 189, 248, 0.15);
+    }
+
+    .creative-icon-wrap {
+      width: 48px;
+      height: 48px;
+      border-radius: var(--radius-lg);
+      background: rgba(56, 189, 248, 0.1);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--tertiary);
+      font-size: 1.35rem;
+      margin-bottom: 1.25rem;
+    }
+
+    .creative-title {
+      font-size: 1.2rem;
+      font-weight: 700;
+      margin-bottom: 0.75rem;
+      color: var(--text-main);
+    }
+
+    .creative-desc {
+      font-size: 0.9rem;
+      color: var(--text-muted);
+      line-height: 1.6;
+    }
+
+    /* ==========================================================================
+       CONTACT SECTION
+       ========================================================================== */
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 3rem;
+      align-items: flex-start;
+    }
+
+    .contact-info-panel {
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+    }
+
+    .contact-card-link {
+      background: var(--bg-card);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-xl);
+      padding: 1.5rem;
+      backdrop-filter: blur(12px);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      transition: all var(--transition-base);
+      text-decoration: none;
+    }
+
+    .contact-card-link:hover {
+      border-color: var(--primary);
+      background: var(--bg-card-hover);
+      transform: translateY(-2px);
+    }
+
+    .contact-meta {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+    }
+
+    .contact-icon {
+      width: 42px;
+      height: 42px;
+      border-radius: var(--radius-md);
+      background: rgba(6, 182, 212, 0.1);
+      color: var(--primary);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.2rem;
+    }
+
+    .contact-label {
+      font-family: var(--font-mono);
+      font-size: 0.75rem;
+      color: var(--text-dim);
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+
+    .contact-value {
+      font-family: var(--font-mono);
+      font-size: 0.95rem;
+      color: var(--text-main);
+      font-weight: 600;
+    }
+
+    .contact-arrow {
+      color: var(--text-dim);
+      transition: transform var(--transition-fast);
+    }
+
+    .contact-card-link:hover .contact-arrow {
+      color: var(--primary);
+      transform: translateX(4px);
+    }
+
+    .contact-open-note {
+      background: rgba(16, 185, 129, 0.06);
+      border: 1px dashed var(--border-emerald);
+      border-radius: var(--radius-xl);
+      padding: 1.25rem 1.5rem;
+      font-size: 0.95rem;
+      color: #cbd5e1;
+      line-height: 1.6;
+    }
+
+    .contact-form-panel {
+      background: var(--bg-card);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-2xl);
+      padding: 2.25rem;
+      backdrop-filter: blur(12px);
+    }
+
+    .form-group {
+      margin-bottom: 1.25rem;
+    }
+
+    .form-label {
+      display: block;
+      font-family: var(--font-mono);
+      font-size: 0.8rem;
+      color: var(--text-muted);
+      margin-bottom: 0.45rem;
+    }
+
+    .form-input,
+    .form-textarea {
+      width: 100%;
+      background: rgba(11, 15, 25, 0.7);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-md);
+      padding: 0.75rem 1rem;
+      font-family: var(--font-body);
+      font-size: 0.925rem;
+      color: var(--text-main);
+      outline: none;
+      transition: all var(--transition-fast);
+    }
+
+    .form-input:focus,
+    .form-textarea:focus {
+      border-color: var(--primary);
+      box-shadow: 0 0 0 2px rgba(6, 182, 212, 0.2);
+    }
+
+    .form-textarea {
+      min-height: 110px;
+      resize: vertical;
+    }
+
+    /* ==========================================================================
+       MODAL / DRAWER (PROJECT DETAIL VIEW)
+       ========================================================================== */
+    .modal-backdrop {
+      position: fixed;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.75);
+      backdrop-filter: blur(8px);
+      -webkit-backdrop-filter: blur(8px);
+      z-index: 1000;
+      display: none;
+      align-items: center;
+      justify-content: center;
+      padding: 1.5rem;
+      opacity: 0;
+      transition: opacity var(--transition-base);
+    }
+
+    .modal-backdrop.open {
+      display: flex;
+      opacity: 1;
+    }
+
+    .modal-content {
+      background: var(--bg-modal);
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      border-radius: var(--radius-2xl);
+      width: 100%;
+      max-width: 680px;
+      max-height: 85vh;
+      overflow-y: auto;
+      box-shadow: 0 25px 60px -15px rgba(0, 0, 0, 0.8);
+      position: relative;
+    }
+
+    .modal-header {
+      padding: 1.25rem 1.75rem;
+      background: rgba(11, 15, 25, 0.85);
+      border-bottom: 1px solid var(--border-subtle);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      position: sticky;
+      top: 0;
+      z-index: 2;
+    }
+
+    .modal-close-btn {
+      background: transparent;
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-sm);
+      color: var(--text-muted);
+      width: 32px;
+      height: 32px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: all var(--transition-fast);
+    }
+
+    .modal-close-btn:hover {
+      border-color: var(--primary);
+      color: var(--text-main);
+    }
+
+    .modal-body {
+      padding: 2rem 1.75rem;
+    }
+
+    .modal-code-window {
+      background: var(--bg-terminal);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-md);
+      padding: 1rem 1.25rem;
+      margin: 1.5rem 0;
+      font-family: var(--font-mono);
+      font-size: 0.8rem;
+      overflow-x: auto;
+      position: relative;
+    }
+
+    .copy-snippet-btn {
+      position: absolute;
+      top: 0.6rem;
+      right: 0.6rem;
+      font-family: var(--font-mono);
+      font-size: 0.72rem;
+      background: rgba(255, 255, 255, 0.08);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-sm);
+      color: var(--text-muted);
+      padding: 0.25rem 0.6rem;
+      cursor: pointer;
+      transition: all var(--transition-fast);
+    }
+
+    .copy-snippet-btn:hover {
+      border-color: var(--primary);
+      color: var(--primary);
+    }
+
+    /* Toast Notification */
+    .toast-popup {
+      position: fixed;
+      bottom: 2rem;
+      right: 2rem;
+      background: rgba(15, 23, 42, 0.95);
+      border: 1px solid var(--border-emerald);
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+      border-radius: var(--radius-lg);
+      padding: 0.9rem 1.4rem;
+      color: var(--text-main);
+      font-family: var(--font-mono);
+      font-size: 0.85rem;
+      display: flex;
+      align-items: center;
+      gap: 0.65rem;
+      z-index: 2000;
+      transform: translateY(100px);
+      opacity: 0;
+      transition: all var(--transition-base);
+    }
+
+    .toast-popup.show {
+      transform: translateY(0);
+      opacity: 1;
+    }
+
+    /* ==========================================================================
+       FOOTER
+       ========================================================================== */
+    .footer {
+      border-top: 1px solid var(--border-subtle);
+      padding: 3rem 0;
+      background: rgba(11, 15, 25, 0.95);
+    }
+
+    .footer-inner {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1.5rem;
+    }
+
+    .footer-note {
+      font-family: var(--font-mono);
+      font-size: 0.8rem;
+      color: var(--text-dim);
+    }
+
+    /* ==========================================================================
+       RESPONSIVE BREAKPOINTS
+       ========================================================================== */
+    @media (max-width: 1024px) {
+      .hero-grid {
+        grid-template-columns: 1fr;
+        gap: 2.5rem;
+      }
+
+      .about-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .contact-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .nav-links {
+        display: none;
+      }
+
+      .nav-links.mobile-open {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 4.25rem;
+        left: 0;
+        width: 100%;
+        background: rgba(11, 15, 25, 0.98);
+        border-bottom: 1px solid var(--border-subtle);
+        padding: 1.5rem;
+        gap: 1.25rem;
+      }
+
+      .mobile-menu-btn {
+        display: block;
+      }
+
+      .hero-ctas {
+        flex-direction: column;
+      }
+
+      .btn {
+        width: 100%;
+      }
+
+      .section-header {
+        margin-bottom: 2rem;
+      }
+
+      .focus-grid,
+      .projects-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- ==========================================================================
+       STICKY NAVIGATION BAR
+       ========================================================================== -->
+  <header class="navbar" id="navbar">
+    <div class="container nav-container">
+      <a href="#home" class="nav-brand">
+        <span class="brand-prompt">~/</span>ahsan<span class="brand-prompt">$</span>
+      </a>
+
+      <nav>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="#home" class="nav-link active">Home</a></li>
+          <li><a href="#about" class="nav-link">Tentang</a></li>
+          <li><a href="#focus" class="nav-link">Fokus</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#projects" class="nav-link">Proyek</a></li>
+          <li><a href="#journey" class="nav-link">Journey</a></li>
+          <li><a href="#creative" class="nav-link">Creative</a></li>
+          <li><a href="#contact" class="nav-link">Kontak</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <div class="status-badge" title="Status Pembelajaran">
+          <span class="pulsing-dot"></span>
+          <span>Kelas 11 PPLG</span>
+        </div>
+        <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Buka Menu Navigasi">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ==========================================================================
+       1. HERO / HOME (id="home")
+       ========================================================================== -->
+  <section class="hero-section" id="home">
+    <div class="container hero-grid">
+      <div class="hero-content">
+        <div class="hero-badge">
+          🌱 Siswa SMK Negeri 2 Surakarta • Student Developer
+        </div>
+        <h1 class="hero-title">
+          <span class="gradient-text">Ahsan Drajad Mulia</span>
+        </h1>
+        <div class="hero-subtitle">
+          Student Developer & Creative Learner
+        </div>
+        <p class="hero-description">
+          Siswa PPLG yang sedang belajar membangun sesuatu melalui code, design, dan kreativitas. Mendokumentasikan
+          perjalanan eksplorasi teknologi secara jujur apa adanya.
+        </p>
+
+        <div class="hero-ctas">
+          <a href="#projects" class="btn btn-primary" id="ctaProjects">
+            <span>Lihat Portfolio</span>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+              <polyline points="12 5 19 12 12 19"></polyline>
+            </svg>
+          </a>
+          <a href="#about" class="btn btn-secondary" id="ctaAbout">
+            <span>Tentang Saya</span>
+          </a>
+        </div>
+
+        <div class="hero-highlights">
+          <span class="highlights-label">// Tech Stack & Minat</span>
+          <div class="pill-list">
+            <span class="pill">Python</span>
+            <span class="pill">C++</span>
+            <span class="pill">Web Dev</span>
+            <span class="pill">Android Studio</span>
+            <span class="pill">Creative Writing</span>
+            <span class="pill">Digital Drawing</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Hero Visual: Obsidian Terminal Preview -->
+      <div class="hero-terminal-card">
+        <div class="terminal-header">
+          <div class="mac-dots">
+            <div class="dot dot-red"></div>
+            <div class="dot dot-yellow"></div>
+            <div class="dot dot-green"></div>
+          </div>
+          <span class="terminal-title">ahsan@pplg-terminal:~</span>
+          <span style="font-family: var(--font-mono); font-size: 0.72rem; color: var(--primary);">status: ok</span>
+        </div>
+        <div class="terminal-body">
+          <div class="terminal-line">
+            <span class="prompt-char">$</span>
+            <span class="code-val">cat</span>
+            <span class="code-str">developer_profile.json</span>
+          </div>
+          <div style="margin-left: 0.75rem; color: #cbd5e1; margin-bottom: 0.75rem;">
+            {<br>
+            &nbsp;&nbsp;<span class="code-key">"name"</span>: <span class="code-str">"Ahsan Drajad Mulia"</span>,<br>
+            &nbsp;&nbsp;<span class="code-key">"role"</span>: <span class="code-str">"Student Developer &
+              Learner"</span>,<br>
+            &nbsp;&nbsp;<span class="code-key">"major"</span>: <span class="code-str">"Pengembangan Perangkat Lunak dan
+              Gim (PPLG)"</span>,<br>
+            &nbsp;&nbsp;<span class="code-key">"mindset"</span>: [<span class="code-str">"Curious"</span>, <span
+              class="code-str">"Persistent"</span>, <span class="code-str">"Honest"</span>],<br>
+            &nbsp;&nbsp;<span class="code-key">"current_target"</span>: <span class="code-str">"Kesiapan PKL 2026 &
+              Solid Fundamentals"</span><br>
+            }
+          </div>
+          <div class="terminal-line">
+            <span class="prompt-char">$</span>
+            <span class="code-val">git</span>
+            <span>status</span>
+          </div>
+          <div style="color: var(--secondary); font-size: 0.8rem; margin-left: 0.75rem; margin-bottom: 0.5rem;">
+            On branch main: learning_in_progress
+          </div>
+          <div class="terminal-footer-badge">
+            <span style="color: var(--text-dim); font-size: 0.75rem;">Mode: Obsidian Terminal</span>
+            <span class="level-badge level-learning">Learning in progress</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       2. ABOUT ME (id="about")
+       ========================================================================== */
+  ========================================================================== -->
+  <section id="about">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">About Me</span>
+        <h2 class="section-title">Tentang Saya</h2>
+        <p class="section-desc">Mengenal lebih dekat latar belakang dan semangat belajar seorang siswa kejuruan
+          perangkat lunak.</p>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-narrative-card">
+          <p class="narrative-p">
+            Halo! Saya <strong>Ahsan</strong>, siswa SMK kelas 11 program keahlian <strong>Pengembangan Perangkat Lunak
+              dan Gim (PPLG)</strong>. Saya memiliki ketertarikan mendalam dalam mengeksplorasi dunia software
+            development, logika algoritma, dan perancangan aplikasi.
+          </p>
+          <div class="quote-box">
+            <p>
+              "Portofolio ini merupakan dokumentasi perjalanan belajar, eksperimen, dan proyek yang sedang dikembangkan
+              secara jujur apa adanya sebagai pelajar."
+            </p>
+          </div>
+          <p class="narrative-p">
+            Bagi saya, menjadi seorang siswa kejuruan bukan hanya tentang menghafal baris kode, melainkan tentang
+            bagaimana memecahkan masalah langkah demi langkah (algorithmic thinking) dan memiliki keberanian untuk
+            mencoba hal-hal baru tanpa takut menghadapi error.
+          </p>
+        </div>
+
+        <div class="student-highlights-stack">
+          <div class="highlight-card">
+            <div class="highlight-card-header">
+              <div class="highlight-icon">🏫</div>
+              <h3 class="highlight-title">Belajar Mandiri & Sekolah</h3>
+            </div>
+            <p>
+              Mengembangkan logika algoritma secara sistematis di ruang kelas, lalu melanjutkan eksplorasi tools
+              kreatif, riset mandiri, dan proyek sampingan di waktu luang.
+            </p>
+          </div>
+
+          <div class="highlight-card">
+            <div class="highlight-card-header">
+              <div class="highlight-icon">🎯</div>
+              <h3 class="highlight-title">Prinsip Pembelajaran</h3>
+            </div>
+            <p>
+              Berfokus pada pemahaman fundamental yang kuat, pemecahan masalah bertahap, dan konsistensi mencoba hal
+              baru untuk persiapan Praktik Kerja Lapangan (PKL).
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       3. CURRENT FOCUS (id="focus")
+       ========================================================================== -->
+  <section id="focus" style="background: rgba(11, 15, 25, 0.4);">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Active Roadmap</span>
+        <h2 class="section-title">Fokus Pembelajaran Saat Ini</h2>
+        <p class="section-desc">6 aspek penting yang sedang saya perdalam dan latih secara intensif sebagai bekal siswa
+          SMK PPLG.</p>
+      </div>
+
+      <div class="focus-grid">
+        <!-- 1 -->
+        <div class="focus-card">
+          <div>
+            <div class="focus-card-top">
+              <span class="focus-number">01 // FOCUS</span>
+              <span class="focus-badge">Fundamental</span>
+            </div>
+            <h3 class="focus-title">Memperkuat Fundamental Programming</h3>
+            <p class="focus-detail">
+              Mendalami algoritma, struktur data dasar (array, list, dictionary), dan pengoptimalan alur logika
+              pemrograman untuk fondasi berpikir komputasional.
+            </p>
+          </div>
+        </div>
+
+        <!-- 2 -->
+        <div class="focus-card">
+          <div>
+            <div class="focus-card-top">
+              <span class="focus-number">02 // FOCUS</span>
+              <span class="focus-badge">Implementation</span>
+            </div>
+            <h3 class="focus-title">Membuat Project yang Lebih Nyata</h3>
+            <p class="focus-detail">
+              Beralih dari sekadar latihan sintaks menuju pembuatan aplikasi fungsional sederhana yang dapat digunakan
+              dan memberikan solusi langsung.
+            </p>
+          </div>
+        </div>
+
+        <!-- 3 -->
+        <div class="focus-card">
+          <div>
+            <div class="focus-card-top">
+              <span class="focus-number">03 // FOCUS</span>
+              <span class="focus-badge">Documentation</span>
+            </div>
+            <h3 class="focus-title">Mengembangkan Portfolio</h3>
+            <p class="focus-detail">
+              Mendokumentasikan proses, catatan error, dan hasil karya secara berkala agar setiap milestone belajar
+              dapat dipantau dan diukur perkembangannya.
+            </p>
+          </div>
+        </div>
+
+        <!-- 4 -->
+        <div class="focus-card">
+          <div>
+            <div class="focus-card-top">
+              <span class="focus-number">04 // FOCUS</span>
+              <span class="focus-badge">Exploration</span>
+            </div>
+            <h3 class="focus-title">Mempelajari AI dan Python</h3>
+            <p class="focus-detail">
+              Mengeksplorasi otomatisasi script sederhana dengan Python dan memahami dasar-dasar kerja model AI untuk
+              masa depan industri rekayasa perangkat lunak.
+            </p>
+          </div>
+        </div>
+
+        <!-- 5 -->
+        <div class="focus-card">
+          <div>
+            <div class="focus-card-top">
+              <span class="focus-number">05 // FOCUS</span>
+              <span class="focus-badge">Web Tech</span>
+            </div>
+            <h3 class="focus-title">Meningkatkan Web Development</h3>
+            <p class="focus-detail">
+              Memperdalam tata letak responsif, estetika modern dark mode, CSS Flexbox/Grid, dan interaktivitas
+              JavaScript murni pada peramban web.
+            </p>
+          </div>
+        </div>
+
+        <!-- 6 -->
+        <div class="focus-card">
+          <div>
+            <div class="focus-card-top">
+              <span class="focus-number">06 // FOCUS</span>
+              <span class="focus-badge">Preparation</span>
+            </div>
+            <h3 class="focus-title">Persiapan Menghadapi PKL</h3>
+            <p class="focus-detail">
+              Membangun kedisiplinan kerja versi proyek (Git flow), komunikasi teknis, serta kesiapan mental untuk
+              beradaptasi dan berkolaborasi di lingkungan industri.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       4. SKILLS (id="skills")
+       ========================================================================== -->
+  <section id="skills">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Competencies</span>
+        <h2 class="section-title">Keterampilan & Penguasaan Tools</h2>
+        <p class="section-desc">Tingkat penguasaan yang dicantumkan secara jujur (Beginner / Learning / Developing /
+          Familiar — tanpa klaim 'Expert').</p>
+      </div>
+
+      <!-- Filter Tabs -->
+      <div class="skills-filter-row">
+        <button class="filter-btn active" data-filter="all">Semua Keterampilan</button>
+        <button class="filter-btn" data-filter="prog">Programming</button>
+        <button class="filter-btn" data-filter="web">Web Dev</button>
+        <button class="filter-btn" data-filter="mobile">Mobile</button>
+        <button class="filter-btn" data-filter="tools">Tools & DevOps</button>
+        <button class="filter-btn" data-filter="creative">Creative & Multimedia</button>
+      </div>
+
+      <div class="skills-grid" id="skillsGrid">
+        <!-- Python -->
+        <div class="skill-card" data-category="prog">
+          <div class="skill-card-top">
+            <span class="skill-name">Python 3</span>
+            <span class="level-badge level-learning">Learning</span>
+          </div>
+          <div class="skill-category">Programming & Logic</div>
+          <p class="skill-note">Struktur logika, penanganan list & dictionary, looping, serta penyelesaian persoalan
+            komputasi sederhana.</p>
+        </div>
+
+        <!-- C++ -->
+        <div class="skill-card" data-category="prog">
+          <div class="skill-card-top">
+            <span class="skill-name">C++</span>
+            <span class="level-badge level-beginner">Beginner</span>
+          </div>
+          <div class="skill-category">Programming & Logic</div>
+          <p class="skill-note">Dasar tipe data, percabangan if-else, looping for/while, dan fungsi matematika dasar di
+            bangku sekolah.</p>
+        </div>
+
+        <!-- HTML -->
+        <div class="skill-card" data-category="web">
+          <div class="skill-card-top">
+            <span class="skill-name">HTML5</span>
+            <span class="level-badge level-developing">Developing</span>
+          </div>
+          <div class="skill-category">Web Development</div>
+          <p class="skill-note">Penyusunan markup semantik, struktur formulir interaktif, tabel (colspan/rowspan), dan
+            hierarki elemen.</p>
+        </div>
+
+        <!-- CSS -->
+        <div class="skill-card" data-category="web">
+          <div class="skill-card-top">
+            <span class="skill-name">CSS3</span>
+            <span class="level-badge level-developing">Developing</span>
+          </div>
+          <div class="skill-category">Web Development</div>
+          <p class="skill-note">Desain antarmuka, tata letak responsif Flexbox & Grid, CSS variables, serta efek
+            transisi dan glassmorphism.</p>
+        </div>
+
+        <!-- JavaScript -->
+        <div class="skill-card" data-category="web">
+          <div class="skill-card-top">
+            <span class="skill-name">JavaScript</span>
+            <span class="level-badge level-learning">Learning</span>
+          </div>
+          <div class="skill-category">Web Development</div>
+          <p class="skill-note">Manipulasi DOM, event handling, filter array dinamis, dan pembuatan interaktivitas modal
+            popup.</p>
+        </div>
+
+        <!-- Android Studio -->
+        <div class="skill-card" data-category="mobile">
+          <div class="skill-card-top">
+            <span class="skill-name">Android Studio</span>
+            <span class="level-badge level-beginner">Beginner</span>
+          </div>
+          <div class="skill-category">Mobile Development</div>
+          <p class="skill-note">Pengenalan tata letak antarmuka XML, event click tombol, dan pembuatan aplikasi Hello
+            Toast.</p>
+        </div>
+
+        <!-- Git -->
+        <div class="skill-card" data-category="tools">
+          <div class="skill-card-top">
+            <span class="skill-name">Git</span>
+            <span class="level-badge level-learning">Learning</span>
+          </div>
+          <div class="skill-category">Version Control</div>
+          <p class="skill-note">Navigasi CLI, commit rutin, pembuatan branch eksperimen, dan pemeliharaan riwayat revisi
+            proyek.</p>
+        </div>
+
+        <!-- GitHub -->
+        <div class="skill-card" data-category="tools">
+          <div class="skill-card-top">
+            <span class="skill-name">GitHub</span>
+            <span class="level-badge level-learning">Learning</span>
+          </div>
+          <div class="skill-category">Version Control</div>
+          <p class="skill-note">Pengelolaan remote repository, sinkronisasi push/pull, dan hosting portofolio
+            menggunakan GitHub Pages.</p>
+        </div>
+
+        <!-- VS Code -->
+        <div class="skill-card" data-category="tools">
+          <div class="skill-card-top">
+            <span class="skill-name">VS Code</span>
+            <span class="level-badge level-developing">Developing</span>
+          </div>
+          <div class="skill-category">IDE & Workflow</div>
+          <p class="skill-note">Penggunaan shortcut, integrasi terminal terpadu, ekstensi linter, dan debugging kode
+            web/python.</p>
+        </div>
+
+        <!-- Adobe Animate -->
+        <div class="skill-card" data-category="creative">
+          <div class="skill-card-top">
+            <span class="skill-name">Adobe Animate</span>
+            <span class="level-badge level-beginner">Beginner</span>
+          </div>
+          <div class="skill-category">Multimedia</div>
+          <p class="skill-note">Eksplorasi dasar timeline animasi, frame-by-frame, keyframing, dan pergerakan objek 2
+            dimensi.</p>
+        </div>
+
+        <!-- Drawing -->
+        <div class="skill-card" data-category="creative">
+          <div class="skill-card-top">
+            <span class="skill-name">Digital & Sketch</span>
+            <span class="level-badge level-familiar">Familiar</span>
+          </div>
+          <div class="skill-category">Visual Art</div>
+          <p class="skill-note">Membuat sketsa karakter, proporsi anatomi dasar, dan eksplorasi konsep ilustrasi
+            digital.</p>
+        </div>
+
+        <!-- Story Writing -->
+        <div class="skill-card" data-category="creative">
+          <div class="skill-card-top">
+            <span class="skill-name">Story Writing</span>
+            <span class="level-badge level-familiar">Familiar</span>
+          </div>
+          <div class="skill-category">Creative Writing</div>
+          <p class="skill-note">Penulisan naskah cerita dan fiksi pendek seperti naskah 'Di Ambang Longsor' yang
+            berfokus pada emosi & alur cerita.</p>
+        </div>
+      </div>
+
+      <div class="student-note-banner">
+        <span class="note-icon">💡</span>
+        <span>
+          <strong>Catatan Standar Siswa:</strong> Pengelompokan status badge menunjukkan tahap belajar aktif saya. Saya
+          selalu terbuka terhadap arahan teknis dan mentoring dari senior developer.
+        </span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       5. PROJECTS (id="projects")
+       ========================================================================== -->
+  <section id="projects" style="background: rgba(11, 15, 25, 0.5);">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Showcase</span>
+        <h2 class="section-title">Proyek & Karya Pembelajaran</h2>
+        <p class="section-desc">Kompilasi proyek latihan, tugas kejuruan, dan eksperimen pribadi selama bersekolah di
+          SMK PPLG.</p>
+      </div>
+
+      <div class="projects-grid">
+        <!-- 1: Nusantara Travel -->
+        <div class="project-card">
+          <div class="project-header-bar">
+            <div class="mac-dots">
+              <div class="dot dot-red"></div>
+              <div class="dot dot-yellow"></div>
+              <div class="dot dot-green"></div>
+            </div>
+            <span class="project-meta-cat">web_dev/nusantara_travel.html</span>
+          </div>
+          <div class="project-card-content">
+            <div class="project-title-row">
+              <h3 class="project-title">Nusantara Travel</h3>
+              <span class="project-status status-completed">Completed (Latihan Web)</span>
+            </div>
+            <p class="project-desc">
+              Website bertema pariwisata Indonesia yang dibuat dalam pembelajaran Pemrograman Web. Menampilkan destinasi
+              wisata, tabel rute dengan colspan, dan formulir pemesanan tiket dengan pilihan metode pembayaran.
+            </p>
+            <div class="project-tags">
+              <span class="project-tag">HTML5</span>
+              <span class="project-tag">CSS3</span>
+              <span class="project-tag">Forms & Tables</span>
+            </div>
+            <div class="project-actions">
+              <button class="btn-detail" onclick="openProjectModal('nusantara')">
+                <span>Pelajari Detail & Konsep</span>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M5 12h14M12 5l7 7-7 7" />
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- 2: Hello Toast -->
+        <div class="project-card">
+          <div class="project-header-bar">
+            <div class="mac-dots">
+              <div class="dot dot-red"></div>
+              <div class="dot dot-yellow"></div>
+              <div class="dot dot-green"></div>
+            </div>
+            <span class="project-meta-cat">android/hello_toast.apk</span>
+          </div>
+          <div class="project-card-content">
+            <div class="project-title-row">
+              <h3 class="project-title">Hello Toast</h3>
+              <span class="project-status status-completed">Completed (Latihan Android)</span>
+            </div>
+            <p class="project-desc">
+              Proyek Android Studio perdana untuk mempelajari dasar komponen siklus hidup aplikasi mobile. Memiliki
+              tombol Count penghitung angka interaktif di tengah layar dan tombol Toast untuk notifikasi pop-up.
+            </p>
+            <div class="project-tags">
+              <span class="project-tag">Android Studio</span>
+              <span class="project-tag">Java / Kotlin</span>
+              <span class="project-tag">XML Layout</span>
+            </div>
+            <div class="project-actions">
+              <button class="btn-detail" onclick="openProjectModal('hellotoast')">
+                <span>Pelajari Detail & Konsep</span>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M5 12h14M12 5l7 7-7 7" />
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- 3: Git Branch Project -->
+        <div class="project-card">
+          <div class="project-header-bar">
+            <div class="mac-dots">
+              <div class="dot dot-red"></div>
+              <div class="dot dot-yellow"></div>
+              <div class="dot dot-green"></div>
+            </div>
+            <span class="project-meta-cat">git/branch_workflow.sh</span>
+          </div>
+          <div class="project-card-content">
+            <div class="project-title-row">
+              <h3 class="project-title">Git & GitHub Branch Project</h3>
+              <span class="project-status status-ongoing">Ongoing Practice</span>
+            </div>
+            <p class="project-desc">
+              Praktik mandiri pengelolaan repository, branching, pemisahan versi stabil dan versi eksperimen, commit
+              terstruktur, dan push ke GitHub remote untuk menjaga integritas kode utama.
+            </p>
+            <div class="project-tags">
+              <span class="project-tag">Git CLI</span>
+              <span class="project-tag">GitHub</span>
+              <span class="project-tag">Branching Strategy</span>
+            </div>
+            <div class="project-actions">
+              <button class="btn-detail" onclick="openProjectModal('gitbranch')">
+                <span>Pelajari Detail & Konsep</span>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M5 12h14M12 5l7 7-7 7" />
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- 4: Python Problem Solving -->
+        <div class="project-card">
+          <div class="project-header-bar">
+            <div class="mac-dots">
+              <div class="dot dot-red"></div>
+              <div class="dot dot-yellow"></div>
+              <div class="dot dot-green"></div>
+            </div>
+            <span class="project-meta-cat">python/logic_solver.py</span>
+          </div>
+          <div class="project-card-content">
+            <div class="project-title-row">
+              <h3 class="project-title">Python Problem Solving</h3>
+              <span class="project-status status-ongoing">Active Learning</span>
+            </div>
+            <p class="project-desc">
+              Kumpulan latihan logika algoritma dengan Python 3. Fokus pada manipulasi list, penggunaan dictionary,
+              pencarian nilai, filtering data, dan kalkulasi otomatis melalui antarmuka baris perintah (CLI).
+            </p>
+            <div class="project-tags">
+              <span class="project-tag">Python 3</span>
+              <span class="project-tag">Algorithms</span>
+              <span class="project-tag">CLI Script</span>
+            </div>
+            <div class="project-actions">
+              <button class="btn-detail" onclick="openProjectModal('pythonlogic')">
+                <span>Pelajari Detail & Konsep</span>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M5 12h14M12 5l7 7-7 7" />
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- 5: Adobe Animate / Multimedia -->
+        <div class="project-card">
+          <div class="project-header-bar">
+            <div class="mac-dots">
+              <div class="dot dot-red"></div>
+              <div class="dot dot-yellow"></div>
+              <div class="dot dot-green"></div>
+            </div>
+            <span class="project-meta-cat">multimedia/animation_lab.fla</span>
+          </div>
+          <div class="project-card-content">
+            <div class="project-title-row">
+              <h3 class="project-title">Adobe Animate Experiment</h3>
+              <span class="project-status status-exploration">Exploration</span>
+            </div>
+            <p class="project-desc">
+              Eksplorasi pembuatan animasi 2D digital. Mempelajari pengaturan frame-by-frame, keyframing, transisi gerak
+              objek vektor, serta integrasi aset visual untuk pengayaan media interaktif.
+            </p>
+            <div class="project-tags">
+              <span class="project-tag">Adobe Animate</span>
+              <span class="project-tag">Vector Art</span>
+              <span class="project-tag">2D Motion</span>
+            </div>
+            <div class="project-actions">
+              <button class="btn-detail" onclick="openProjectModal('adobeanimate')">
+                <span>Pelajari Detail & Konsep</span>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M5 12h14M12 5l7 7-7 7" />
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- 6: Di Ambang Longsor -->
+        <div class="project-card">
+          <div class="project-header-bar">
+            <div class="mac-dots">
+              <div class="dot dot-red"></div>
+              <div class="dot dot-yellow"></div>
+              <div class="dot dot-green"></div>
+            </div>
+            <span class="project-meta-cat">literature/di_ambang_longsor.md</span>
+          </div>
+          <div class="project-card-content">
+            <div class="project-title-row">
+              <h3 class="project-title">Di Ambang Longsor</h3>
+              <span class="project-status status-exploration">Draft Cerpen</span>
+            </div>
+            <p class="project-desc">
+              Karya penulisan fiksi naratif yang mengeksplorasi ketegangan emosional, konflik karakter di tengah situasi
+              kritis, serta pemilihan diksi deskriptif untuk memperkuat atmosfer cerita.
+            </p>
+            <div class="project-tags">
+              <span class="project-tag">Creative Writing</span>
+              <span class="project-tag">Storytelling</span>
+              <span class="project-tag">Narrative Art</span>
+            </div>
+            <div class="project-actions">
+              <button class="btn-detail" onclick="openProjectModal('diambanglongsor')">
+                <span>Pelajari Detail & Konsep</span>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M5 12h14M12 5l7 7-7 7" />
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       6. LEARNING JOURNEY (id="journey")
+       ========================================================================== -->
+  <section id="journey">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Learning Path</span>
+        <h2 class="section-title">Timeline Perjalanan Belajar</h2>
+        <p class="section-desc">Tahap demi tahap proses mengenal teknologi dari awal masuk SMK PPLG hingga saat ini.</p>
+      </div>
+
+      <div class="timeline-container">
+        <div class="timeline-line"></div>
+
+        <!-- 01 -->
+        <div class="timeline-item">
+          <div class="timeline-node"></div>
+          <div class="timeline-card">
+            <div class="timeline-step">MILESTONE 01 // AWAL MULA</div>
+            <h3 class="timeline-title">Mulai Mengenal Programming</h3>
+            <p class="timeline-desc">
+              Menemukan ketertarikan pada logika komputer, arsitektur software, dan teknologi digital saat pertama kali
+              memasuki program keahlian PPLG di SMK.
+            </p>
+          </div>
+        </div>
+
+        <!-- 02 -->
+        <div class="timeline-item">
+          <div class="timeline-node"></div>
+          <div class="timeline-card">
+            <div class="timeline-step">MILESTONE 02 // LOGIKA & STRUKTUR</div>
+            <h3 class="timeline-title">Belajar Python dan C++</h3>
+            <p class="timeline-desc">
+              Membangun pemahaman mendasar mengenai variabel, tipe data, kondisi logika (if-else), serta perulangan
+              (loops) untuk menyelesaikan kalkulasi otomatis.
+            </p>
+          </div>
+        </div>
+
+        <!-- 03 -->
+        <div class="timeline-item">
+          <div class="timeline-node"></div>
+          <div class="timeline-card">
+            <div class="timeline-step">MILESTONE 03 // ANTARMUKA WEB</div>
+            <h3 class="timeline-title">Mengenal Web Development</h3>
+            <p class="timeline-desc">
+              Mulai membuat struktur halaman web menggunakan semantik HTML5 dan menatanya dengan styling CSS modern,
+              Flexbox, dan responsive design.
+            </p>
+          </div>
+        </div>
+
+        <!-- 04 -->
+        <div class="timeline-item">
+          <div class="timeline-node"></div>
+          <div class="timeline-card">
+            <div class="timeline-step">MILESTONE 04 // EKOSISTEM MOBILE</div>
+            <h3 class="timeline-title">Mengerjakan Project Android</h3>
+            <p class="timeline-desc">
+              Mencoba Android Studio untuk pertama kalinya, memahami hubungan layout XML dengan file Kotlin/Java, dan
+              berhasil merilis aplikasi interaktif Hello Toast.
+            </p>
+          </div>
+        </div>
+
+        <!-- 05 -->
+        <div class="timeline-item">
+          <div class="timeline-node"></div>
+          <div class="timeline-card">
+            <div class="timeline-step">MILESTONE 05 // KOLABORASI KODE</div>
+            <h3 class="timeline-title">Belajar Git dan GitHub</h3>
+            <p class="timeline-desc">
+              Memahami pentingnya version control system, cara melakukan snapshot perubahan dengan commit, dan
+              pemanfaatan branch untuk menjaga stabilitas branch utama.
+            </p>
+          </div>
+        </div>
+
+        <!-- 06 -->
+        <div class="timeline-item">
+          <div class="timeline-node"></div>
+          <div class="timeline-card">
+            <div class="timeline-step">MILESTONE 06 // EKSPLORASI LANJUTAN</div>
+            <h3 class="timeline-title">Mengeksplorasi AI dan Multimedia</h3>
+            <p class="timeline-desc">
+              Menjelajahi konsep dasar otomatisasi Python untuk penerapan AI serta mempelajari timeline grafis dinamis
+              menggunakan Adobe Animate.
+            </p>
+          </div>
+        </div>
+
+        <!-- 07 -->
+        <div class="timeline-item">
+          <div class="timeline-node"></div>
+          <div class="timeline-card">
+            <div class="timeline-step">MILESTONE 07 // SINTESIS KREATIF</div>
+            <h3 class="timeline-title">Mengembangkan Creative Work</h3>
+            <p class="timeline-desc">
+              Menggabungkan daya imajinasi lewat gambar visual digital/tradisional dan penulisan cerita pendek untuk
+              memperkaya perspektif estetika dalam pengembangan produk.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       7. CREATIVE CORNER (id="creative")
+       ========================================================================== -->
+  <section id="creative" style="background: rgba(11, 15, 25, 0.4);">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Passions</span>
+        <h2 class="section-title">Creative Corner</h2>
+        <p class="section-desc">Eksplorasi di luar baris kode pemrograman yang melatih kepekaan visual, narasi, dan
+          kreativitas.</p>
+      </div>
+
+      <div class="creative-grid">
+        <!-- Drawing -->
+        <div class="creative-card">
+          <div class="creative-icon-wrap">🎨</div>
+          <h3 class="creative-title">Drawing & Sketch</h3>
+          <p class="creative-desc">
+            Menggambar sketsa digital dan ilustrasi manual. Melatih kepekaan terhadap proporsi, pencahayaan, dan
+            komposisi visual yang turut menunjang pemahaman UI/UX.
+          </p>
+        </div>
+
+        <!-- Story Writing -->
+        <div class="creative-card">
+          <div class="creative-icon-wrap">✍️</div>
+          <h3 class="creative-title">Story Writing</h3>
+          <p class="creative-desc">
+            Menulis naskah fiksi naratif seperti cerpen "Di Ambang Longsor". Berfokus pada pembangunan emosi tokoh,
+            tempo cerita, dan eksplorasi sudut pandang unik.
+          </p>
+        </div>
+
+        <!-- Game Modding -->
+        <div class="creative-card">
+          <div class="creative-icon-wrap">🎮</div>
+          <h3 class="creative-title">Game Modding</h3>
+          <p class="creative-desc">
+            Bereksperimen memodifikasi file asset dan struktur logic game ringan untuk memahami bagaimana komponen game
+            engine bekerja dari dalam.
+          </p>
+        </div>
+
+        <!-- Animation -->
+        <div class="creative-card">
+          <div class="creative-icon-wrap">🎞️</div>
+          <h3 class="creative-title">Animation Lab</h3>
+          <p class="creative-desc">
+            Mempelajari prinsip dasar animasi (squash, stretch, timing) dan membuat gerakan frame-by-frame sederhana
+            menggunakan Adobe Animate.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       8. CONTACT (id="contact")
+       ========================================================================== -->
+  <section id="contact">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Get in Touch</span>
+        <h2 class="section-title">Kontak & Terhubung</h2>
+        <p class="section-desc">Terbuka untuk diskusi santai mengenai programming, sharing pengalaman belajar, atau
+          saran pengembangan skill.</p>
+      </div>
+
+      <div class="contact-grid">
+        <div class="contact-info-panel">
+          <!-- GitHub -->
+          <a href="https://github.com/Svendart" target="_blank" rel="noopener noreferrer" class="contact-card-link">
+            <div class="contact-meta">
+              <div class="contact-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path
+                    d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+                  </path>
+                </svg>
+              </div>
+              <div>
+                <span class="contact-label">GitHub Profile</span>
+                <div class="contact-value">github.com/Svendart</div>
+              </div>
+            </div>
+            <span class="contact-arrow">→</span>
+          </a>
+
+          <!-- Email -->
+          <a href="mailto:ahsandrajadmulia1@gmail.com" class="contact-card-link"
+            onclick="copyEmail(event, 'ahsandrajadmulia1@gmail.com')">
+            <div class="contact-meta">
+              <div class="contact-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                  <polyline points="22,6 12,13 2,6"></polyline>
+                </svg>
+              </div>
+              <div>
+                <span class="contact-label">Email Address (Klik untuk Salin)</span>
+                <div class="contact-value">ahsandrajadmulia1@gmail.com</div>
+              </div>
+            </div>
+            <span class="contact-arrow">📋</span>
+          </a>
+
+          <!-- LinkedIn -->
+          <a href="https://www.linkedin.com/in/ahsan-drajad-mulia-5b9a64430" target="_blank" rel="noopener noreferrer"
+            class="contact-card-link">
+            <div class="contact-meta">
+              <div class="contact-icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                  <rect x="2" y="9" width="4" height="12"></rect>
+                  <circle cx="4" cy="4" r="2"></circle>
+                </svg>
+              </div>
+              <div>
+                <span class="contact-label">LinkedIn Profile</span>
+                <div class="contact-value">linkedin.com/in/ahsan-drajad-mulia</div>
+              </div>
+            </div>
+            <span class="contact-arrow">→</span>
+          </a>
+
+          <div class="contact-open-note">
+            💬 <strong>Catatan Komunikasi:</strong> Sebagai pelajar yang sedang mempersiapkan diri untuk Praktik Kerja
+            Lapangan (PKL), saya sangat antusias menerima masukan konstruktif untuk mengembangkan skill teknis saya.
+          </div>
+        </div>
+
+        <!-- Form Mockup -->
+        <div class="contact-form-panel">
+          <h3 style="font-size: 1.25rem; font-weight: 700; margin-bottom: 1.25rem;">Kirim Pesan Singkat</h3>
+          <form id="contactForm" onsubmit="handleFormSubmit(event)">
+            <div class="form-group">
+              <label class="form-label" for="senderName">Nama Lengkap</label>
+              <input type="text" id="senderName" class="form-input" placeholder="Misal: Kak Budi Santoso" required>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="senderEmail">Email Anda</label>
+              <input type="email" id="senderEmail" class="form-input" placeholder="nama@perusahaan.com" required>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="senderMessage">Pesan atau Diskusi</label>
+              <textarea id="senderMessage" class="form-textarea"
+                placeholder="Tuliskan pesan, saran, atau peluang kolaborasi belajar..." required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary" style="width: 100%;">
+              <span>Kirim Pesan</span>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <line x1="22" y1="2" x2="11" y2="13"></line>
+                <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+              </svg>
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       FOOTER
+       ========================================================================== -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div>
+        <div style="font-family: var(--font-mono); font-weight: 700; color: var(--text-main); margin-bottom: 0.25rem;">
+          <span style="color: var(--primary);">~/</span>ahsan.dev
+        </div>
+        <div class="footer-note">
+          Dokumentasi Belajar Siswa SMK PPLG • Didesain dengan Obsidian Terminal System
+        </div>
+      </div>
+
+      <div class="footer-note">
+        &copy; 2026 Ahsan. Seluruh konten didokumentasikan untuk keperluan edukasi dan portofolio kejuruan.
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==========================================================================
+       MODAL POPUP DETAIL PROYEK
+       ========================================================================== -->
+  <div class="modal-backdrop" id="projectModal" onclick="closeModalOutside(event)">
+    <div class="modal-content" id="modalContent">
+      <div class="modal-header">
+        <div class="mac-dots">
+          <div class="dot dot-red"></div>
+          <div class="dot dot-yellow"></div>
+          <div class="dot dot-green"></div>
+        </div>
+        <span id="modalMetaTitle"
+          style="font-family: var(--font-mono); font-size: 0.8rem; color: var(--primary);">project_details.json</span>
+        <button class="modal-close-btn" onclick="closeProjectModal()" aria-label="Tutup Dialog">✕</button>
+      </div>
+
+      <div class="modal-body" id="modalBody">
+        <!-- Content injected dynamically via JavaScript -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notification -->
+  <div class="toast-popup" id="toastNotification">
+    <span style="color: var(--secondary); font-size: 1.1rem;">✓</span>
+    <span id="toastMessage">Teks berhasil disalin!</span>
+  </div>
+
+  <!-- ==========================================================================
+       JAVASCRIPT LOGIC
+       ========================================================================== -->
+  <script>
+    // Data Project Modal
+    const projectDetails = {
+      nusantara: {
+        title: "Nusantara Travel",
+        category: "Web Development",
+        status: "Completed (Latihan Web)",
+        tech: ["HTML5", "CSS3", "Forms", "Table Layout"],
+        summary: "Website sederhana bertema pariwisata Nusantara yang dibuat dalam modul Pemrograman Web di sekolah SMK PPLG.",
+        features: [
+          "Navigasi tautan eksternal dengan atribut target='_blank'",
+          "Penyusunan tabel jadwal paket wisata menggunakan atribut colspan dan rowspan",
+          "Formulir interaktif lengkap dengan input nama, radio button jenis paket, dan dropdown pilihan metode pembayaran"
+        ],
+        codeSnippet: `<!-- Cuplikan Formulir Pemesanan Nusantara Travel -->
+<form action="/proses-booking" method="POST" class="booking-form">
+  <label for="nama">Nama Pemesan:</label>
+  <input type="text" id="nama" name="nama" required>
+
+  <label for="destinasi">Pilih Destinasi:</label>
+  <select id="destinasi" name="destinasi">
+    <option value="raja-ampat">Raja Ampat, Papua</option>
+    <option value="bromo">Gunung Bromo, Jawa Timur</option>
+    <option value="labuan-bajo">Labuan Bajo, NTT</option>
+  </select>
+
+  <button type="submit">Konfirmasi Pemesanan</button>
+</form>`
+      },
+      hellotoast: {
+        title: "Hello Toast",
+        category: "Mobile App",
+        status: "Completed (Latihan Android)",
+        tech: ["Android Studio", "Kotlin / Java", "XML Layout"],
+        summary: "Aplikasi mobile perdana yang dibangun untuk mempelajari dasar komponen Activity dan Lifecycle pada Android.",
+        features: [
+          "Dua tombol utama: Tombol Toast untuk memunculkan pesan singkat pop-up dan tombol Count",
+          "TextView di tengah layar dengan ukuran besar yang nilainya bertambah setiap kali tombol Count ditekan",
+          "Pengenalan file layout XML (ConstraintLayout / LinearLayout) dan penanganan event onClickListener"
+        ],
+        codeSnippet: `// Cuplikan Method Penghitung Hello Toast
+fun countUp(view: View) {
+    mCount++
+    if (mShowCount != null) {
+        mShowCount.text = mCount.toString()
+    }
+}
+
+fun showToast(view: View) {
+    Toast.makeText(this, "Hello Toast dari Ahsan!", Toast.LENGTH_SHORT).show()
+}`
+      },
+      gitbranch: {
+        title: "Git & GitHub Branch Project",
+        category: "Version Control / Tools",
+        status: "Ongoing Practice",
+        tech: ["Git CLI", "GitHub", "Terminal", "Branching Strategy"],
+        summary: "Latihan rutin dalam mempraktikkan alur kerja version control standar industri.",
+        features: [
+          "Memisahkan versi asli yang stabil di branch 'main' dengan fitur eksperimen di branch baru",
+          "Melakukan commit dengan pesan terstruktur yang menjelaskan perubahan spesifik",
+          "Melakukan push dan sinkronisasi ke remote GitHub tanpa merusak branch produksi"
+        ],
+        codeSnippet: `# Perintah Git Branching yang dipraktikkan:
+git checkout -b feature/tampilan-baru
+# Lakukan pengeditan kode...
+git add .
+git commit -m "feat: perbarui tata letak form responsif"
+git checkout main
+git merge feature/tampilan-baru
+git push origin main`
+      },
+      pythonlogic: {
+        title: "Python Problem Solving",
+        category: "Programming & Logic",
+        status: "Active Learning",
+        tech: ["Python 3", "Data Structures", "CLI"],
+        summary: "Eksplorasi pembuatan program CLI Python untuk memperkuat fondasi logika matematika dan algoritma.",
+        features: [
+          "Penggunaan List comprehension dan Dictionary untuk penyimpanan data sementara",
+          "Penyelesaian algoritma pencarian (linear search) dan pengurutan angka",
+          "Program kalkulator otomatis dan validasi input pengguna dari terminal"
+        ],
+        codeSnippet: `# Contoh Script Pengurutan dan Filter Nilai Siswa
+nilai_siswa = [78, 85, 92, 60, 88, 95]
+siswa_lulus = [n for n in nilai_siswa if n >= 75]
+
+print(f"Total peserta: {len(nilai_siswa)}")
+print(f"Nilai tertinggi: {max(nilai_siswa)}")
+print(f"Siswa lulus KKM: {siswa_lulus}")`
+      },
+      adobeanimate: {
+        title: "Adobe Animate Experiment",
+        category: "Multimedia & Animasi",
+        status: "Exploration",
+        tech: ["Adobe Animate", "Vector Art", "Keyframing"],
+        summary: "Mempelajari prinsip pembuatan motion grafik dan animasi dua dimensi untuk media presentasi dan gim.",
+        features: [
+          "Pengenalan frame rate (fps) dan timeline animasi",
+          "Pembuatan gerak objek menggunakan Classic Tween dan Motion Tween",
+          "Eksplorasi ekspor animasi menjadi format video dan GIF"
+        ],
+        codeSnippet: `// Catatan Timeline Pembelajaran:
+// - Layer 1: Latar Belakang (Static Graphic)
+// - Layer 2: Karakter Utama (Keyframe pergerakan langkah)
+// - Frame Rate: 24 FPS untuk hasil yang halus`
+      },
+      diambanglongsor: {
+        title: "Di Ambang Longsor",
+        category: "Creative Writing",
+        status: "Draft Cerpen",
+        tech: ["Creative Writing", "Storytelling", "Narrative Structure"],
+        summary: "Karya tulis fiksi pendek karya pribadi yang mengeksplorasi dinamika konflik manusia dengan alam.",
+        features: [
+          "Pembangunan suasana dramatis dan suspense",
+          "Eksplorasi monolog batin dan keputusan moral karakter utama",
+          "Latihan menyusun plot twist dan kesimpulan cerita yang membekas"
+        ],
+        codeSnippet: `"Tanah di bawah pijakannya mulai bergetar halus. Ranting-ranting pinus
+berderak patah sebelum suara gemuruh berat menyapu lereng bukit.
+Tidak ada waktu untuk menoleh ke belakang—hanya satu detik tersisa
+untuk memilih jalan turun."`
+      }
+    };
+
+    // Modal Control Functions
+    function openProjectModal(key) {
+      const data = projectDetails[key];
+      if (!data) return;
+
+      const modalBody = document.getElementById('modalBody');
+      const metaTitle = document.getElementById('modalMetaTitle');
+
+      metaTitle.innerText = `${key}.config.json`;
+
+      modalBody.innerHTML = `
+        <div style="display: flex; align-items: center; justify-content: space-between; gap: 1rem; margin-bottom: 1rem;">
+          <h2 style="font-size: 1.5rem; font-weight: 700; color: var(--text-main);">${data.title}</h2>
+          <span class="project-status status-completed" style="font-size: 0.75rem;">${data.status}</span>
+        </div>
+        <p style="color: var(--text-muted); font-size: 1rem; line-height: 1.6; margin-bottom: 1.25rem;">${data.summary}</p>
+        
+        <div style="margin-bottom: 1.5rem;">
+          <h4 style="font-size: 0.95rem; font-weight: 700; color: var(--tertiary); margin-bottom: 0.5rem; font-family: var(--font-mono);">// FITUR & KONSEP YANG DIPELAJARI</h4>
+          <ul style="padding-left: 1.25rem; color: var(--text-muted); font-size: 0.9rem; line-height: 1.7;">
+            ${data.features.map(f => `<li>${f}</li>`).join('')}
+          </ul>
+        </div>
+
+        <div>
+          <h4 style="font-size: 0.95rem; font-weight: 700; color: var(--secondary); margin-bottom: 0.5rem; font-family: var(--font-mono);">// CUPLIKAN KODE / CATATAN TEKNIS</h4>
+          <div class="modal-code-window">
+            <button class="copy-snippet-btn" onclick="copySnippetText(this)">Salin Kode</button>
+            <pre style="margin: 0; color: #a5f3fc; font-family: var(--font-mono); font-size: 0.8rem; line-height: 1.5;"><code>${escapeHtml(data.codeSnippet)}</code></pre>
+          </div>
+        </div>
+      `;
+
+      const modal = document.getElementById('projectModal');
+      modal.classList.add('open');
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeProjectModal() {
+      const modal = document.getElementById('projectModal');
+      modal.classList.remove('open');
+      document.body.style.overflow = '';
+    }
+
+    function closeModalOutside(event) {
+      if (event.target.id === 'projectModal') {
+        closeProjectModal();
+      }
+    }
+
+    function escapeHtml(text) {
+      const div = document.createElement('div');
+      div.innerText = text;
+      return div.innerHTML;
+    }
+
+    // Copy to clipboard helper
+    function copySnippetText(btn) {
+      const pre = btn.parentElement.querySelector('code');
+      if (pre) {
+        navigator.clipboard.writeText(pre.innerText).then(() => {
+          btn.innerText = 'Tersalin!';
+          showToast('Kode berhasil disalin ke clipboard');
+          setTimeout(() => { btn.innerText = 'Salin Kode'; }, 2000);
+        });
+      }
+    }
+
+    function copyEmail(e, email) {
+      e.preventDefault();
+      navigator.clipboard.writeText(email).then(() => {
+        showToast(`Email ${email} berhasil disalin!`);
+      });
+    }
+
+    function showToast(msg) {
+      const toast = document.getElementById('toastNotification');
+      const toastMsg = document.getElementById('toastMessage');
+      toastMsg.innerText = msg;
+      toast.classList.add('show');
+      setTimeout(() => {
+        toast.classList.remove('show');
+      }, 3000);
+    }
+
+    // Skills Filter Logic
+    const filterBtns = document.querySelectorAll('.filter-btn');
+    const skillCards = document.querySelectorAll('.skill-card');
+
+    filterBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        filterBtns.forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        const filterVal = btn.getAttribute('data-filter');
+
+        skillCards.forEach(card => {
+          if (filterVal === 'all' || card.getAttribute('data-category') === filterVal) {
+            card.style.display = 'block';
+          } else {
+            card.style.display = 'none';
+          }
+        });
+      });
+    });
+
+    // Form Submission Mockup
+    function handleFormSubmit(e) {
+      e.preventDefault();
+      const name = document.getElementById('senderName').value;
+      showToast(`Terima kasih ${name}, pesan Anda telah tersimpan.`);
+      e.target.reset();
+    }
+
+    // Mobile Navigation Toggle
+    const mobileBtn = document.getElementById('mobileMenuBtn');
+    const navLinks = document.getElementById('navLinks');
+
+    mobileBtn.addEventListener('click', () => {
+      navLinks.classList.toggle('mobile-open');
+    });
+
+    // Close mobile nav on link click
+    document.querySelectorAll('.nav-link').forEach(link => {
+      link.addEventListener('click', () => {
+        navLinks.classList.remove('mobile-open');
+      });
+    });
+
+    // Active link highlighting on scroll
+    window.addEventListener('scroll', () => {
+      const sections = document.querySelectorAll('section[id]');
+      const scrollY = window.pageYOffset;
+
+      sections.forEach(current => {
+        const sectionHeight = current.offsetHeight;
+        const sectionTop = current.offsetTop - 120;
+        const sectionId = current.getAttribute('id');
+        const link = document.querySelector(`.nav-link[href*="${sectionId}"]`);
+
+        if (link && scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
+          document.querySelectorAll('.nav-link').forEach(l => l.classList.remove('active'));
+          link.classList.add('active');
+        }
+      });
+    });
+  </script>
+</body>
+
+</html>

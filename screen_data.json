@@ -1,0 +1,355 @@
+{
+  "screenshot": {
+    "name": "projects/7308320561744390364/screens/96ed176a3e6c416a9f9e3360dc85ccf7/fileEntries/screenshot",
+    "downloadUrl": "https://lh3.googleusercontent.com/aida/AEtjO1W9tzlgSOkn2Nex3R-GUTSpOtxEEE_QwWsJIEzeiyemFeCzDMxiHL04zlK-LB5n2vSM27aifqqEDc9QfMtuHQ2uhzGAqRWaCcCuvDff-aYVLF4V-I86k5MQa-3STuECNtRci8TvY8etGE0e6aZDhesd89hw1138xqee5eZeeImLVLYWbN3_jQpT5Z6vNWWVydLvjglFmITynRvGBoGPUs6tTuL6PHEyyDdfm3-8k9nNJoBi-xX8t9bjLQ"
+  },
+  "htmlCode": {
+    "name": "projects/7308320561744390364/screens/96ed176a3e6c416a9f9e3360dc85ccf7/fileEntries/html",
+    "downloadUrl": "https://contribution.usercontent.google.com/download?c=CgthaWRhX2NvZGVmeBJxEgxzdGl0Y2hfZmlsZXMaYQosc3RpdGNoX2h0bWxfMDAwNjVkMzg1NmE1YmY4MzAyMmQ0MTIyOWIwZTY1NjUSCxIHENSSi_OkARgBkgEjCgpwcm9qZWN0X2lkEhVCEzczMDgzMjA1NjE3NDQzOTAzNjQ&filename=&opi=89354086",
+    "mimeType": "text/html"
+  },
+  "id": "96ed176a3e6c416a9f9e3360dc85ccf7",
+  "generatedBy": "figaro_agent",
+  "width": "2560",
+  "height": "14384",
+  "title": "Ahsan - Student Developer & Creative Learner",
+  "prompt": "Generate the comprehensive single-page portfolio for Ahsan: Student Developer & Creative Learner (Siswa SMK Kelas 11 PPLG).\n\nStructure and exact content to include:\n\n1. HERO / HOME (id=\"home\"):\n- Name badge: \"🌱 Siswa SMK Kelas 11 PPLG • Student Developer\"\n- Main Title: \"Ahsan\"\n- Subtitle: \"Student Developer & Creative Learner\"\n- Description: \"Siswa PPLG yang sedang belajar membangun sesuatu melalui code, design, dan kreativitas.\"\n- Profile Visual: An avatar placeholder with stylish terminal/code avatar or geometric initial \"A\", subtle glowing neon cyan border (#06b6d4), terminal badge `status: learning_in_progress`.\n- CTA Buttons: \"Lihat Portfolio\" (anchor to #projects, neon cyan filled/glow) and \"Tentang Saya\" (anchor to #about, subtle border button).\n- Quick highlight pills: Python, C++, Web, Android Studio, Creative Writing & Drawing.\n\n2. ABOUT ME (id=\"about\"):\n- Headline: \"Tentang Saya\"\n- Narrative: Ahsan adalah siswa SMK kelas 11 program keahlian Pengembangan Perangkat Lunak dan Gim (PPLG) yang sedang mengeksplorasi dunia software development dan kreativitas digital.\n- Emphasize: Portofolio ini merupakan dokumentasi perjalanan belajar, eksperimen, dan proyek yang sedang dikembangkan secara jujur apa adanya sebagai pelajar.\n- Student Highlights: \n  * \"Belajar Mandiri & Sekolah\": Mengembangkan logika algoritma di kelas dan mengeksplorasi tools kreatif di waktu luang.\n  * \"Prinsip Pembelajaran\": Berfokus pada pemahaman fundamental, pemecahan masalah bertahap, dan konsistensi mencoba hal baru.\n\n3. CURRENT FOCUS (id=\"focus\"):\nHighlight 6 things currently being learned with clean interactive cards and progress badges:\n1) Memperkuat fundamental programming (algoritma & struktur data dasar)\n2) Membuat project yang lebih nyata (aplikasi fungsional sederhana)\n3) Mengembangkan portfolio (mendokumentasikan proses & karya)\n4) Mempelajari AI dan Python (otomatisasi dan pengenalan konsep AI)\n5) Meningkatkan kemampuan web development (tata letak responsif & interaktivitas)\n6) Membangun pengalaman untuk persiapan PKL (kesiapan adaptasi dan kolaborasi)\n\n4. SKILLS (id=\"skills\"):\nGrouped with honest student proficiency levels (Beginner / Learning / Developing / Familiar — NO \"expert\"):\n- Programming: Python (Learning), C++ (Beginner)\n- Web: HTML (Developing), CSS (Developing), JavaScript (Learning)\n- Mobile: Android Studio (Beginner)\n- Tools: Git (Learning), GitHub (Learning), VS Code (Developing)\n- Multimedia: Adobe Animate (Beginner)\n- Creative: Drawing (Familiar), Story Writing (Familiar)\nInteractive filter or categorized card grid with subtle cyan badges and level indicators.\n\n5. PROJECTS (id=\"projects\"):\nInteractive filterable card grid using clean structured cards. Include modal or expandable drawer details and clear tags:\n1) \"Nusantara Travel\" | Kategori: Web Development | Status: Completed (Latihan Web)\n   - Deskripsi: Website sederhana bertema perjalanan Indonesia yang dibuat dalam pembelajaran Pemrograman Web menggunakan HTML dan CSS. Fitur & konsep yang dipelajari: target=\"_blank\", colspan, form dengan pilihan metode pembayaran.\n   - Tech: HTML, CSS\n2) \"Hello Toast\" | Kategori: Mobile App | Status: Completed (Latihan Android)\n   - Deskripsi: Proyek Android Studio untuk mempelajari dasar pengembangan aplikasi Android. Memiliki fitur tombol Count dan Toast serta tampilan sederhana dengan angka penghitung di tengah layar.\n   - Tech: Android Studio, Java/Kotlin, XML\n3) \"Git & GitHub Branch Project\" | Kategori: Version Control / Tools | Status: Ongoing Practice\n   - Deskripsi: Mempelajari penggunaan repository, branch, commit, push, dan pengelolaan versi proyek. Salah satu pola pengembangan yang digunakan adalah memisahkan versi asli dan versi modifikasi menggunakan branch.\n   - Tech: Git, GitHub, Terminal\n4) \"Python Problem Solving\" | Kategori: Programming & Logic | Status: Active Learning\n   - Deskripsi: Sedang mengembangkan kemampuan Python, terutama penggunaan list, dictionary, looping, dan penyelesaian masalah algoritmik sederhana.\n   - Tech: Python 3, CLI\n5) \"Adobe Animate / Multimedia Experiment\" | Kategori: Multimedia & Animasi | Status: Exploration\n   - Deskripsi: Sedang mempelajari Adobe Animate dan tertarik mengembangkan kemampuan dalam animasi serta visual digital 2D.\n   - Tech: Adobe Animate, Vector Art\n6) \"Di Ambang Longsor\" | Kategori: Creative Writing | Status: Draft Cerpen\n   - Deskripsi: Memiliki minat dalam menggambar dan menulis cerita. Salah satu karya cerpen yang pernah dikembangkan adalah narasi fiksi \"Di Ambang Longsor\".\n   - Tech: Creative Writing, Storytelling\n\n6. LEARNING JOURNEY (id=\"journey\"):\nVertical timeline showing Ahsan's authentic learning roadmap:\n- 01. Mulai mengenal programming: Menemukan ketertarikan pada logika komputer dan teknologi saat masuk SMK jurusan PPLG.\n- 02. Belajar Python dan C++: Memahami konsep variabel, tipe data, percabangan, dan perulangan.\n- 03. Mengenal web development: Membuat struktur halaman dengan HTML dan mempercantik tampilan dengan CSS.\n- 04. Mengerjakan project Android: Mencoba Android Studio untuk pertama kalinya dan membuat aplikasi interaktif Hello Toast.\n- 05. Belajar Git dan GitHub: Memahami pentingnya version control dan eksplorasi kerja branch secara terstruktur.\n- 06. Mengeksplorasi AI dan multimedia: Menjelajahi konsep dasar Python untuk AI serta eksplorasi Adobe Animate.\n- 07. Mengembangkan creative work: Menggabungkan daya imajinasi lewat gambar digital/tradisional dan penulisan cerita.\n\n7. CREATIVE CORNER (id=\"creative\"):\nA personal experimental showcase section showing Ahsan's non-coding passions:\n- Drawing: Sketsa digital dan gambar tradisional, eksplorasi proporsi dan pencahayaan.\n- Story Writing: Menulis naskah fiksi dan cerpen termasuk \"Di Ambang Longsor\", mengeksplorasi emosi dan alur cerita.\n- Game Modding: Eksplorasi modifikasi asset dan logika game untuk mempelajari cara kerja game engine dari dalam.\n- Animation: Eksperimen timeline dan keyframing menggunakan Adobe Animate.\n\n8. CONTACT (id=\"contact\"):\nSimple, honest student contact section:\n- GitHub: Placeholder profile link (`github.com/username-placeholder`)\n- Email: Placeholder email link (`ahsan.student@example.com`)\n- LinkedIn: Placeholder link (`linkedin.com/in/ahsan-student-placeholder`)\n- Note: \"Terbuka untuk diskusi santai mengenai programming, sharing pengalaman belajar, atau saran pengembangan skill.\"\n\nStyling:\n- Dark mode: deep slate/navy `#090d16` and `#111827`, card backgrounds `#151d30`, borders subtle `#22304d`\n- Accents: Neon cyan `#06b6d4` and emerald `#10b981`\n- Modern cards with rounded-2xl, subtle glassmorphism backdrop-blur, elegant hover effects.\n- Clean vanilla JS for tabs/filters and smooth scroll interactions.",
+  "name": "projects/7308320561744390364/screens/96ed176a3e6c416a9f9e3360dc85ccf7",
+  "theme": {
+    "colorMode": "DARK",
+    "font": "PLUS_JAKARTA_SANS",
+    "roundness": "ROUND_EIGHT",
+    "customColor": "#06b6d4",
+    "headlineFont": "PLUS_JAKARTA_SANS",
+    "bodyFont": "INTER",
+    "labelFont": "JETBRAINS_MONO",
+    "namedColors": {
+      "on_background": "#dfe2f1",
+      "inverse_primary": "#00687a",
+      "tertiary_fixed": "#c4e7ff",
+      "primary_fixed": "#acedff",
+      "on_primary_fixed": "#001f26",
+      "surface_bright": "#353944",
+      "on_tertiary": "#00354a",
+      "on_surface_variant": "#bcc9cd",
+      "on_secondary": "#003824",
+      "on_secondary_fixed": "#002113",
+      "inverse_on_surface": "#2c303b",
+      "tertiary_container": "#23b2ec",
+      "on_secondary_fixed_variant": "#005236",
+      "on_primary_container": "#00424f",
+      "surface_container_highest": "#313540",
+      "surface_container_lowest": "#0a0e18",
+      "surface_container": "#1c1f2a",
+      "primary_fixed_dim": "#4cd7f6",
+      "inverse_surface": "#dfe2f1",
+      "surface_variant": "#313540",
+      "primary_container": "#06b6d4",
+      "on_error": "#690005",
+      "secondary_fixed": "#6ffbbe",
+      "secondary_fixed_dim": "#4edea3",
+      "on_error_container": "#ffdad6",
+      "on_tertiary_fixed_variant": "#004c69",
+      "outline_variant": "#3d494c",
+      "secondary_container": "#00a572",
+      "surface": "#0f131d",
+      "on_tertiary_fixed": "#001e2c",
+      "on_surface": "#dfe2f1",
+      "on_primary_fixed_variant": "#004e5c",
+      "background": "#0f131d",
+      "error": "#ffb4ab",
+      "secondary": "#4edea3",
+      "on_primary": "#003640",
+      "tertiary": "#7bd0ff",
+      "surface_tint": "#4cd7f6",
+      "primary": "#4cd7f6",
+      "surface_dim": "#0f131d",
+      "tertiary_fixed_dim": "#7bd0ff",
+      "error_container": "#93000a",
+      "outline": "#869397",
+      "on_secondary_container": "#00311f",
+      "surface_container_low": "#171b26",
+      "on_tertiary_container": "#00415a",
+      "surface_container_high": "#262a35"
+    },
+    "colorVariant": "FIDELITY",
+    "overridePrimaryColor": "#06b6d4",
+    "overrideSecondaryColor": "#10b981",
+    "overrideTertiaryColor": "#38bdf8",
+    "overrideNeutralColor": "#0b0f19",
+    "spacingScale": 2,
+    "typography": {
+      "display-hero-mobile": {
+        "fontFamily": "Plus Jakarta Sans",
+        "fontSize": "36px",
+        "fontWeight": "800",
+        "lineHeight": "44px",
+        "letterSpacing": "-0.025em"
+      },
+      "label-badge": {
+        "fontFamily": "JetBrains Mono",
+        "fontSize": "11px",
+        "fontWeight": "600",
+        "lineHeight": "14px",
+        "letterSpacing": "0.05em"
+      },
+      "body-lg": {
+        "fontFamily": "Inter",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "lineHeight": "26px",
+        "letterSpacing": "-0.005em"
+      },
+      "headline-lg": {
+        "fontFamily": "Plus Jakarta Sans",
+        "fontSize": "32px",
+        "fontWeight": "700",
+        "lineHeight": "40px",
+        "letterSpacing": "-0.02em"
+      },
+      "body-md": {
+        "fontFamily": "Inter",
+        "fontSize": "14px",
+        "fontWeight": "400",
+        "lineHeight": "22px"
+      },
+      "code-snippet": {
+        "fontFamily": "JetBrains Mono",
+        "fontSize": "13px",
+        "fontWeight": "500",
+        "lineHeight": "20px"
+      },
+      "headline-lg-mobile": {
+        "fontFamily": "Plus Jakarta Sans",
+        "fontSize": "26px",
+        "fontWeight": "700",
+        "lineHeight": "34px",
+        "letterSpacing": "-0.015em"
+      },
+      "button-label": {
+        "fontFamily": "Plus Jakarta Sans",
+        "fontSize": "14px",
+        "fontWeight": "600",
+        "lineHeight": "20px",
+        "letterSpacing": "0.01em"
+      },
+      "headline-md": {
+        "fontFamily": "Plus Jakarta Sans",
+        "fontSize": "22px",
+        "fontWeight": "600",
+        "lineHeight": "30px",
+        "letterSpacing": "-0.015em"
+      },
+      "display-hero": {
+        "fontFamily": "Plus Jakarta Sans",
+        "fontSize": "56px",
+        "fontWeight": "800",
+        "lineHeight": "64px",
+        "letterSpacing": "-0.03em"
+      },
+      "headline-sm": {
+        "fontFamily": "Plus Jakarta Sans",
+        "fontSize": "18px",
+        "fontWeight": "600",
+        "lineHeight": "26px",
+        "letterSpacing": "-0.01em"
+      },
+      "body-sm": {
+        "fontFamily": "Inter",
+        "fontSize": "12px",
+        "fontWeight": "400",
+        "lineHeight": "18px"
+      }
+    },
+    "spacing": {
+      "margin": "2rem",
+      "space-xs": "0.25rem",
+      "margin-mobile": "1rem",
+      "space-lg": "1.5rem",
+      "space-md": "1rem",
+      "space-xl": "2.5rem",
+      "gutter": "1.5rem",
+      "space-sm": "0.5rem",
+      "gutter-mobile": "1rem"
+    },
+    "headlineFontFamily": "Plus Jakarta Sans",
+    "bodyFontFamily": "Inter",
+    "labelFontFamily": "JetBrains Mono"
+  },
+  "deviceType": "DESKTOP",
+  "screenType": "DESIGN",
+  "screenMetadata": {
+    "agentType": "PRO_AGENT",
+    "status": "COMPLETE"
+  },
+  "designSystem": {
+    "name": "assets/bcd7d5f3b893403a9182bbc89da47a6a",
+    "designSystem": {
+      "displayName": "Obsidian Terminal",
+      "styleGuidelines": "## Brand & Style\n\nThe design system is crafted specifically for a high-potential vocational software engineering student (SMK PPLG), positioning the developer as technically proficient, curious, and product-minded. It merges an engineering-first mental model with an approachable student showcase aesthetic. \n\nThe design combines **Technical Dark Mode Minimalism** with **Subtle Glassmorphism**:\n- Deep obsidian and charcoal backdrops evoke modern developer IDEs and terminal workflows.\n- Vibrant cyan and emerald accents emulate active syntax highlighting, compiler success states, and live telemetry.\n- Subtle frosted glass panels with delicate hairline borders provide structured depth without overwhelming content readability.\n- The overall emotional response is precision, intellectual ambition, polished craft, and forward momentum.\n\n## Layout & Spacing\n\nThis design system uses a 12-column responsive fluid grid pinned to an optimal max-width of `1200px`:\n\n- **Desktop (>= 1024px):** 12 columns, `1.5rem` (24px) gutters, and `2rem` (32px) screen margins. Side-by-side terminal demos and dual-column project cards.\n- **Tablet (768px - 1023px):** 8 columns, `1.25rem` (20px) gutters, and `1.5rem` (24px) margins. Grids collapse into 2-column or stacked formations.\n- **Mobile (< 768px):** 4 columns, `1rem` (16px) gutters, and `1rem` (16px) margins. Strict vertical single-column stack with scrollable horizontal badge rows when needed.\n\nElement gap rhythms follow an 8-point system, maintaining tight visual binding between headings and associated code representations.\n\n## Elevation & Depth\n\nVisual hierarchy uses frosted glass layers and localized optical light spill instead of heavy drop shadows:\n\n- **Base Layer (Level 0):** Pure dark background (`#0b0f19`) accented by faint, large-radius atmospheric radial gradient glows (e.g., `#06b6d4` at 6% opacity) placed strategically behind key sections.\n- **Card Surface (Level 1):** Background `rgba(17, 24, 39, 0.75)` with `backdrop-filter: blur(12px)`. Outlined by a crisp `1px` translucent border `rgba(255, 255, 255, 0.08)`.\n- **Hovered / Interactive Surface (Level 2):** Background tint brightens to `rgba(31, 41, 55, 0.85)` with `backdrop-filter: blur(16px)`. Border transitions to `rgba(6, 182, 212, 0.35)`, accompanied by a diffuse ambient cyan aura: `0 8px 30px -4px rgba(6, 182, 212, 0.15)`.\n- **Floating Modals & Code Drawers (Level 3):** Background `rgba(15, 23, 42, 0.95)`, `backdrop-filter: blur(20px)`, bordered by `rgba(255, 255, 255, 0.12)` with shadow `0 20px 40px -10px rgba(0, 0, 0, 0.7)`.\n\n## Components\n\n### Buttons\n- **Primary Action (Call to Action):** Solid vibrant cyan (`#06b6d4`) background, text `#0b0f19` in semi-bold `Plus Jakarta Sans`. Subtle neon box-shadow (`0 0 20px rgba(6, 182, 212, 0.35)`). Hover scales to emerald accent (`#10b981`) or shifts brightness with smooth transitions.\n- **Secondary (Code / Demo Links):** Translucent obsidian glass background (`rgba(17, 24, 39, 0.8)`), white text, `1px` border `rgba(255, 255, 255, 0.1)`. On hover: cyan border and cyan text.\n- **Ghost / Icon (GitHub, LinkedIn):** No background, text `#9ca3af`. On hover: background `rgba(255, 255, 255, 0.05)`, text `#06b6d4`.\n\n### Skill Level Badges (Pill Chips)\nRendered in `JetBrains Mono` uppercase with an optional pulsating status dot:\n- **Learning:** Tint `rgba(6, 182, 212, 0.15)`, text `#22d3ee`, border `rgba(6, 182, 212, 0.4)`. Shows active exploration.\n- **Developing:** Tint `rgba(16, 185, 129, 0.15)`, text `#34d399`, border `rgba(16, 185, 129, 0.4)`. Shows applied competence.\n- **Familiar:** Tint `rgba(245, 158, 11, 0.12)`, text `#fbbf24`, border `rgba(245, 158, 11, 0.35)`. Shows working familiarity.\n- **Beginner:** Tint `rgba(148, 163, 184, 0.12)`, text `#cbd5e1`, border `rgba(148, 163, 184, 0.25)`. Shows introductory baseline.\n\n### Project Showcase Cards\n- Container styled with `rounded-2xl`, glassmorphic slate background (`rgba(17, 24, 39, 0.7)`), and hairline border `rgba(255, 255, 255, 0.08)`.\n- Features an integrated mock-terminal header: 3 macOS-style dots (red, yellow, green in subtle muted tones) and a title in `JetBrains Mono`.\n- Code tag chips array at the bottom using monospaced labels (`Next.js`, `Laravel`, `TailwindCSS`).\n\n### Input Fields & Contact Form\n- Background: `rgba(11, 15, 25, 0.6)`.\n- Border: `1px solid rgba(255, 255, 255, 0.1)`.\n- Focus state: `border-color: #06b6d4`, subtle cyan inner ring `box-shadow: 0 0 0 2px rgba(6, 182, 212, 0.2)`.\n- Placeholder text: `#4b5563`.\n\n### Interactive Code Snippets / Terminal Window\n- Distinct dark background (`#080c14`) nested inside cards.\n- Integrated copy button floating in the top right that flashes `#10b981` (Emerald) with a \"Copied!\" checkmark when clicked.",
+      "theme": {
+        "colorMode": "DARK",
+        "font": "PLUS_JAKARTA_SANS",
+        "roundness": "ROUND_EIGHT",
+        "customColor": "#06b6d4",
+        "headlineFont": "PLUS_JAKARTA_SANS",
+        "bodyFont": "INTER",
+        "labelFont": "JETBRAINS_MONO",
+        "namedColors": {
+          "on_error_container": "#ffdad6",
+          "on_tertiary_fixed_variant": "#004c69",
+          "primary": "#4cd7f6",
+          "secondary_fixed_dim": "#4edea3",
+          "inverse_primary": "#00687a",
+          "secondary_container": "#00a572",
+          "outline": "#869397",
+          "surface_dim": "#0f131d",
+          "surface_variant": "#313540",
+          "on_error": "#690005",
+          "surface_container_high": "#262a35",
+          "on_secondary_container": "#00311f",
+          "primary_fixed_dim": "#4cd7f6",
+          "surface_container": "#1c1f2a",
+          "surface": "#0f131d",
+          "on_secondary": "#003824",
+          "tertiary_fixed_dim": "#7bd0ff",
+          "on_background": "#dfe2f1",
+          "primary_container": "#06b6d4",
+          "surface_container_lowest": "#0a0e18",
+          "primary_fixed": "#acedff",
+          "inverse_surface": "#dfe2f1",
+          "on_tertiary_fixed": "#001e2c",
+          "on_secondary_fixed_variant": "#005236",
+          "on_primary_container": "#00424f",
+          "on_surface": "#dfe2f1",
+          "surface_tint": "#4cd7f6",
+          "on_primary_fixed_variant": "#004e5c",
+          "on_tertiary_container": "#00415a",
+          "surface_container_low": "#171b26",
+          "secondary_fixed": "#6ffbbe",
+          "surface_container_highest": "#313540",
+          "tertiary_container": "#23b2ec",
+          "on_secondary_fixed": "#002113",
+          "inverse_on_surface": "#2c303b",
+          "on_primary": "#003640",
+          "on_surface_variant": "#bcc9cd",
+          "outline_variant": "#3d494c",
+          "background": "#0f131d",
+          "on_tertiary": "#00354a",
+          "error_container": "#93000a",
+          "tertiary_fixed": "#c4e7ff",
+          "surface_bright": "#353944",
+          "secondary": "#4edea3",
+          "error": "#ffb4ab",
+          "tertiary": "#7bd0ff",
+          "on_primary_fixed": "#001f26"
+        },
+        "designMd": "---\nname: Obsidian Terminal\ncolors:\n  surface: '#0f131d'\n  surface-dim: '#0f131d'\n  surface-bright: '#353944'\n  surface-container-lowest: '#0a0e18'\n  surface-container-low: '#171b26'\n  surface-container: '#1c1f2a'\n  surface-container-high: '#262a35'\n  surface-container-highest: '#313540'\n  on-surface: '#dfe2f1'\n  on-surface-variant: '#bcc9cd'\n  inverse-surface: '#dfe2f1'\n  inverse-on-surface: '#2c303b'\n  outline: '#869397'\n  outline-variant: '#3d494c'\n  surface-tint: '#4cd7f6'\n  primary: '#4cd7f6'\n  on-primary: '#003640'\n  primary-container: '#06b6d4'\n  on-primary-container: '#00424f'\n  inverse-primary: '#00687a'\n  secondary: '#4edea3'\n  on-secondary: '#003824'\n  secondary-container: '#00a572'\n  on-secondary-container: '#00311f'\n  tertiary: '#7bd0ff'\n  on-tertiary: '#00354a'\n  tertiary-container: '#23b2ec'\n  on-tertiary-container: '#00415a'\n  error: '#ffb4ab'\n  on-error: '#690005'\n  error-container: '#93000a'\n  on-error-container: '#ffdad6'\n  primary-fixed: '#acedff'\n  primary-fixed-dim: '#4cd7f6'\n  on-primary-fixed: '#001f26'\n  on-primary-fixed-variant: '#004e5c'\n  secondary-fixed: '#6ffbbe'\n  secondary-fixed-dim: '#4edea3'\n  on-secondary-fixed: '#002113'\n  on-secondary-fixed-variant: '#005236'\n  tertiary-fixed: '#c4e7ff'\n  tertiary-fixed-dim: '#7bd0ff'\n  on-tertiary-fixed: '#001e2c'\n  on-tertiary-fixed-variant: '#004c69'\n  background: '#0f131d'\n  on-background: '#dfe2f1'\n  surface-variant: '#313540'\ntypography:\n  display-hero:\n    fontFamily: Plus Jakarta Sans\n    fontSize: 56px\n    fontWeight: '800'\n    lineHeight: 64px\n    letterSpacing: -0.03em\n  display-hero-mobile:\n    fontFamily: Plus Jakarta Sans\n    fontSize: 36px\n    fontWeight: '800'\n    lineHeight: 44px\n    letterSpacing: -0.025em\n  headline-lg:\n    fontFamily: Plus Jakarta Sans\n    fontSize: 32px\n    fontWeight: '700'\n    lineHeight: 40px\n    letterSpacing: -0.02em\n  headline-lg-mobile:\n    fontFamily: Plus Jakarta Sans\n    fontSize: 26px\n    fontWeight: '700'\n    lineHeight: 34px\n    letterSpacing: -0.015em\n  headline-md:\n    fontFamily: Plus Jakarta Sans\n    fontSize: 22px\n    fontWeight: '600'\n    lineHeight: 30px\n    letterSpacing: -0.015em\n  headline-sm:\n    fontFamily: Plus Jakarta Sans\n    fontSize: 18px\n    fontWeight: '600'\n    lineHeight: 26px\n    letterSpacing: -0.01em\n  body-lg:\n    fontFamily: Inter\n    fontSize: 16px\n    fontWeight: '400'\n    lineHeight: 26px\n    letterSpacing: -0.005em\n  body-md:\n    fontFamily: Inter\n    fontSize: 14px\n    fontWeight: '400'\n    lineHeight: 22px\n  body-sm:\n    fontFamily: Inter\n    fontSize: 12px\n    fontWeight: '400'\n    lineHeight: 18px\n  code-snippet:\n    fontFamily: JetBrains Mono\n    fontSize: 13px\n    fontWeight: '500'\n    lineHeight: 20px\n  label-badge:\n    fontFamily: JetBrains Mono\n    fontSize: 11px\n    fontWeight: '600'\n    lineHeight: 14px\n    letterSpacing: 0.05em\n  button-label:\n    fontFamily: Plus Jakarta Sans\n    fontSize: 14px\n    fontWeight: '600'\n    lineHeight: 20px\n    letterSpacing: 0.01em\nrounded:\n  sm: 0.25rem\n  DEFAULT: 0.5rem\n  md: 0.75rem\n  lg: 1rem\n  xl: 1.5rem\n  full: 9999px\nspacing:\n  gutter: 1.5rem\n  gutter-mobile: 1rem\n  margin: 2rem\n  margin-mobile: 1rem\n  space-xs: 0.25rem\n  space-sm: 0.5rem\n  space-md: 1rem\n  space-lg: 1.5rem\n  space-xl: 2.5rem\n---\n\n## Brand & Style\n\nThe design system is crafted specifically for a high-potential vocational software engineering student (SMK PPLG), positioning the developer as technically proficient, curious, and product-minded. It merges an engineering-first mental model with an approachable student showcase aesthetic. \n\nThe design combines **Technical Dark Mode Minimalism** with **Subtle Glassmorphism**:\n- Deep obsidian and charcoal backdrops evoke modern developer IDEs and terminal workflows.\n- Vibrant cyan and emerald accents emulate active syntax highlighting, compiler success states, and live telemetry.\n- Subtle frosted glass panels with delicate hairline borders provide structured depth without overwhelming content readability.\n- The overall emotional response is precision, intellectual ambition, polished craft, and forward momentum.\n\n## Colors\n\nThe palette is tuned specifically for sustained high-contrast legibility in a dark environment:\n\n- **Canvas & Surfaces:**\n  - Base Background: `#0b0f19` (Obsidian Base)\n  - Surface Raised / Cards: `#111827` (Slate Surface, 70%–80% opacity when glassified)\n  - Surface Elevated / Modals / Tooltips: `#1f2937`\n  - Subtle Hairline Borders: `rgba(255, 255, 255, 0.08)` to `rgba(6, 182, 212, 0.2)`\n- **Accents:**\n  - Primary (`#06b6d4` / Neon Cyan): Command triggers, active routes, primary CTAs, and featured work highlights.\n  - Secondary (`#10b981` / Vibrant Emerald): Production status indicators, deployed project tags, and learning progression badges.\n  - Tertiary (`#38bdf8` / Sky Cyan): Interactive hovers, code identifiers, and metadata tags.\n- **Text & Hierarchy:**\n  - Text Primary: `#f9fafb` (98% contrast against `#0b0f19`)\n  - Text Secondary: `#9ca3af` (Readable muted tone for metadata and timestamps)\n  - Text Tertiary: `#6b7280` (Discreet inline code labels, line numbers, and micro-copy)\n- **Status Badges (Level Indicators):**\n  - *Learning:* Cyan tint (`rgba(6, 182, 212, 0.12)`, text `#22d3ee`, border `rgba(6, 182, 212, 0.3)`)\n  - *Developing:* Emerald tint (`rgba(16, 185, 129, 0.12)`, text `#34d399`, border `rgba(16, 185, 129, 0.3)`)\n  - *Familiar:* Amber/Slate transition (`rgba(245, 158, 11, 0.12)`, text `#fbbf24`, border `rgba(245, 158, 11, 0.3)`)\n  - *Beginner:* Neutral slate tint (`rgba(148, 163, 184, 0.12)`, text `#cbd5e1`, border `rgba(148, 163, 184, 0.25)`)\n\n## Typography\n\nThe typography pairs three specialized typefaces to mirror the identity of a modern student software developer:\n\n1. **Headlines (`Plus Jakarta Sans`):** Warm, geometric, and welcoming. Gives large titles human energy and structural balance without appearing overly mechanical.\n2. **Body Text (`Inter`):** Neutral, exceptionally clear, and optimized for high-density reading across screens.\n3. **Labels & Snippets (`JetBrains Mono`):** Carries the genuine developer signature across skill badges, terminal windows, code metrics, and Git commit logs.\n\nAlways apply tabular numerals (`tnum`) for metrics, project counters, and timeline dates.\n\n## Layout & Spacing\n\nThis design system uses a 12-column responsive fluid grid pinned to an optimal max-width of `1200px`:\n\n- **Desktop (>= 1024px):** 12 columns, `1.5rem` (24px) gutters, and `2rem` (32px) screen margins. Side-by-side terminal demos and dual-column project cards.\n- **Tablet (768px - 1023px):** 8 columns, `1.25rem` (20px) gutters, and `1.5rem` (24px) margins. Grids collapse into 2-column or stacked formations.\n- **Mobile (< 768px):** 4 columns, `1rem` (16px) gutters, and `1rem` (16px) margins. Strict vertical single-column stack with scrollable horizontal badge rows when needed.\n\nElement gap rhythms follow an 8-point system, maintaining tight visual binding between headings and associated code representations.\n\n## Elevation & Depth\n\nVisual hierarchy uses frosted glass layers and localized optical light spill instead of heavy drop shadows:\n\n- **Base Layer (Level 0):** Pure dark background (`#0b0f19`) accented by faint, large-radius atmospheric radial gradient glows (e.g., `#06b6d4` at 6% opacity) placed strategically behind key sections.\n- **Card Surface (Level 1):** Background `rgba(17, 24, 39, 0.75)` with `backdrop-filter: blur(12px)`. Outlined by a crisp `1px` translucent border `rgba(255, 255, 255, 0.08)`.\n- **Hovered / Interactive Surface (Level 2):** Background tint brightens to `rgba(31, 41, 55, 0.85)` with `backdrop-filter: blur(16px)`. Border transitions to `rgba(6, 182, 212, 0.35)`, accompanied by a diffuse ambient cyan aura: `0 8px 30px -4px rgba(6, 182, 212, 0.15)`.\n- **Floating Modals & Code Drawers (Level 3):** Background `rgba(15, 23, 42, 0.95)`, `backdrop-filter: blur(20px)`, bordered by `rgba(255, 255, 255, 0.12)` with shadow `0 20px 40px -10px rgba(0, 0, 0, 0.7)`.\n\n## Shapes\n\nThe design uses smooth modern radii to counterbalance the dark, technical nature of the theme:\n\n- **Large Project & Showcase Cards:** `rounded-2xl` (1rem / 16px) creates a polished, frame-like feel for application screenshots and terminal windows.\n- **Input Fields & Small Containers:** `rounded-xl` (0.75rem / 12px) ensures comfortable target touch areas.\n- **Interactive Buttons:** `rounded-xl` for standard layout buttons; full `rounded-full` (pill) for status badges and micro tags.\n- **Progress Trackers & Code Previews:** `rounded-lg` (0.5rem / 8px) with internal nested elements inheriting proportional radii (`card radius - padding`).\n\n## Components\n\n### Buttons\n- **Primary Action (Call to Action):** Solid vibrant cyan (`#06b6d4`) background, text `#0b0f19` in semi-bold `Plus Jakarta Sans`. Subtle neon box-shadow (`0 0 20px rgba(6, 182, 212, 0.35)`). Hover scales to emerald accent (`#10b981`) or shifts brightness with smooth transitions.\n- **Secondary (Code / Demo Links):** Translucent obsidian glass background (`rgba(17, 24, 39, 0.8)`), white text, `1px` border `rgba(255, 255, 255, 0.1)`. On hover: cyan border and cyan text.\n- **Ghost / Icon (GitHub, LinkedIn):** No background, text `#9ca3af`. On hover: background `rgba(255, 255, 255, 0.05)`, text `#06b6d4`.\n\n### Skill Level Badges (Pill Chips)\nRendered in `JetBrains Mono` uppercase with an optional pulsating status dot:\n- **Learning:** Tint `rgba(6, 182, 212, 0.15)`, text `#22d3ee`, border `rgba(6, 182, 212, 0.4)`. Shows active exploration.\n- **Developing:** Tint `rgba(16, 185, 129, 0.15)`, text `#34d399`, border `rgba(16, 185, 129, 0.4)`. Shows applied competence.\n- **Familiar:** Tint `rgba(245, 158, 11, 0.12)`, text `#fbbf24`, border `rgba(245, 158, 11, 0.35)`. Shows working familiarity.\n- **Beginner:** Tint `rgba(148, 163, 184, 0.12)`, text `#cbd5e1`, border `rgba(148, 163, 184, 0.25)`. Shows introductory baseline.\n\n### Project Showcase Cards\n- Container styled with `rounded-2xl`, glassmorphic slate background (`rgba(17, 24, 39, 0.7)`), and hairline border `rgba(255, 255, 255, 0.08)`.\n- Features an integrated mock-terminal header: 3 macOS-style dots (red, yellow, green in subtle muted tones) and a title in `JetBrains Mono`.\n- Code tag chips array at the bottom using monospaced labels (`Next.js`, `Laravel`, `TailwindCSS`).\n\n### Input Fields & Contact Form\n- Background: `rgba(11, 15, 25, 0.6)`.\n- Border: `1px solid rgba(255, 255, 255, 0.1)`.\n- Focus state: `border-color: #06b6d4`, subtle cyan inner ring `box-shadow: 0 0 0 2px rgba(6, 182, 212, 0.2)`.\n- Placeholder text: `#4b5563`.\n\n### Interactive Code Snippets / Terminal Window\n- Distinct dark background (`#080c14`) nested inside cards.\n- Integrated copy button floating in the top right that flashes `#10b981` (Emerald) with a \"Copied!\" checkmark when clicked.",
+        "colorVariant": "FIDELITY",
+        "overridePrimaryColor": "#06b6d4",
+        "overrideSecondaryColor": "#10b981",
+        "overrideTertiaryColor": "#38bdf8",
+        "overrideNeutralColor": "#0b0f19",
+        "spacingScale": 2,
+        "typography": {
+          "body-sm": {
+            "fontFamily": "Inter",
+            "fontSize": "12px",
+            "fontWeight": "400",
+            "lineHeight": "18px"
+          },
+          "headline-sm": {
+            "fontFamily": "Plus Jakarta Sans",
+            "fontSize": "18px",
+            "fontWeight": "600",
+            "lineHeight": "26px",
+            "letterSpacing": "-0.01em"
+          },
+          "headline-md": {
+            "fontFamily": "Plus Jakarta Sans",
+            "fontSize": "22px",
+            "fontWeight": "600",
+            "lineHeight": "30px",
+            "letterSpacing": "-0.015em"
+          },
+          "headline-lg-mobile": {
+            "fontFamily": "Plus Jakarta Sans",
+            "fontSize": "26px",
+            "fontWeight": "700",
+            "lineHeight": "34px",
+            "letterSpacing": "-0.015em"
+          },
+          "display-hero-mobile": {
+            "fontFamily": "Plus Jakarta Sans",
+            "fontSize": "36px",
+            "fontWeight": "800",
+            "lineHeight": "44px",
+            "letterSpacing": "-0.025em"
+          },
+          "headline-lg": {
+            "fontFamily": "Plus Jakarta Sans",
+            "fontSize": "32px",
+            "fontWeight": "700",
+            "lineHeight": "40px",
+            "letterSpacing": "-0.02em"
+          },
+          "body-md": {
+            "fontFamily": "Inter",
+            "fontSize": "14px",
+            "fontWeight": "400",
+            "lineHeight": "22px"
+          },
+          "display-hero": {
+            "fontFamily": "Plus Jakarta Sans",
+            "fontSize": "56px",
+            "fontWeight": "800",
+            "lineHeight": "64px",
+            "letterSpacing": "-0.03em"
+          },
+          "body-lg": {
+            "fontFamily": "Inter",
+            "fontSize": "16px",
+            "fontWeight": "400",
+            "lineHeight": "26px",
+            "letterSpacing": "-0.005em"
+          },
+          "button-label": {
+            "fontFamily": "Plus Jakarta Sans",
+            "fontSize": "14px",
+            "fontWeight": "600",
+            "lineHeight": "20px",
+            "letterSpacing": "0.01em"
+          },
+          "label-badge": {
+            "fontFamily": "JetBrains Mono",
+            "fontSize": "11px",
+            "fontWeight": "600",
+            "lineHeight": "14px",
+            "letterSpacing": "0.05em"
+          },
+          "code-snippet": {
+            "fontFamily": "JetBrains Mono",
+            "fontSize": "13px",
+            "fontWeight": "500",
+            "lineHeight": "20px"
+          }
+        },
+        "spacing": {
+          "margin": "2rem",
+          "space-xs": "0.25rem",
+          "space-lg": "1.5rem",
+          "margin-mobile": "1rem",
+          "gutter": "1.5rem",
+          "gutter-mobile": "1rem",
+          "space-sm": "0.5rem",
+          "space-md": "1rem",
+          "space-xl": "2.5rem"
+        },
+        "headlineFontFamily": "Plus Jakarta Sans",
+        "bodyFontFamily": "Inter",
+        "labelFontFamily": "JetBrains Mono"
+      }
+    },
+    "version": "1"
+  }
+}
